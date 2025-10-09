@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/leafy-treetops-fav.webp">
+    <title>Leafy Treetops Home Page</title>
+    <meta name="description" content="Leafy Treetops Rentals Page | leafytreetops.com">
+    <meta name="author" content="Anissa Pooley">
+    <meta property="og:title" content="Leafy Treetops Vacation Rentals">
+    <meta property="og:description" content="Treehouse Glamping: Rental availabilities">
+    <meta property="og:image"
+        content="https://BerryPatchWhimsy.github.io/wdd231/project/images/leafy-treetops-logo.webp">
+    <meta property="og:url" content="https://BerryPatchWhimsy.github.io/wdd231/project/rentals.html">
+
+    <script src="scripts/rentals.js" type="module"></script>
+    <!-- <script src="scripts/get-random-reviews.mjs" type="module"></script> -->
+    <!-- <script src="scripts/weather.js" defer></script> -->
+    <!-- <script src="scripts/spotlight.js" defer></script> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Original+Surfer&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/rentals.css">
+    <!-- <link rel="stylesheet" href="styles/index-med.css" media="(min-width: 320px)"> -->
+    <!-- <link rel="stylesheet" href="styles/index-large.css" media="(min-width: 600px)"> -->
+    <!-- <link rel="stylesheet" href="styles/index-xlarge.css" media="(min-width: 900px)"> -->
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <picture class="logo">
+                <!-- <source srcset="images/logo-pic-small.webp" media="(max-width: 320px)"> -->
+                <!-- <source srcset="images/logo-pic.webp" media="(max-width: 1200px)"> -->
+                <img src="images/leafy-treetops-logo.webp" alt="Leafy Treetops Logo" width="350" height="350">
+            </picture>
+            <div>
+                <span id="name"></span>
+                <p>Vacation Rentals</p>
+            </div>
+            <button id="menu" title="Hamburger Menu"></button>
+        </div>
+    </header>
+    <main>
+        <h1>Rentals Page</h1>
+        <nav id="animateMe">
+            <ul class="navigation">
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="rentals.html" title="Rentals" class="active"></a></li>
+                <li><a href="contact-us.html" title="Contact">Contact Us</a></li>
+                
+            </ul>
+        </nav>
+        <div class="cardMenu">
+            <button id="grid">🀜 Grid</button>
+            <button id="list">☰ List</button>
+        </div>
+        <!-- <nav class="rentalsNav">
+            <ul>
+                <li><a href="#" id="1" class="active">All Rentals</a></li>
+                <li><a href="#" id="treehouses">Treehouses</a></li>
+                <li><a href="#" id="handicap">Handicap Accessible</a></li>
+                <li><a href="#" id="glamping">Glamping</a></li>
+            </ul>
+        </nav> -->
+        <div id="rentalsContainer"></div>
+        
+    </main>
+    <footer>
+        <div class="info">
+            <p class="leafyTreetopsLLC">Leafy Treetops</p>
+            <p>7385 Big Pine Road, Marshall, NC 28753</p>
+            <p>(775) 123-4567</p>
+            <p class="email"><a href="mailto:info@leafyts.com">info@leafyts.com</a>
+        </div>
+        <div class="social">
+            <nav class="socialLinks">
+                <a href="https://www.facebook.com/LeafyTreetops"><img src="images/facebook-logo.png" alt="Facebook"
+                        loading="lazy"></a>
+                <a href="https://www.twitter.com/LeafyTreetops"><img src="images/twitter-x-logo.png" alt="Twitter X"
+                        loading="lazy"></a>
+                <a href="https://www.linkedin.com/company/LeafyTreetops"><img src="images/linked-in-logo.png"
+                        alt="LinkedIn" loading="lazy"></a>
+            </nav>
+        </div>
+        <div class="copywrite">
+            <p>WDD 231 - Class Project</p>
+            <p>Anissa Pooley</p>
+            <p> &copy; <span id="currentyear"></span>Leafy Treetops LLC</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

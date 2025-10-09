@@ -1,0 +1,111 @@
+/* --------------------------------media x-large----------------------- */
+@media screen and (min-width: 900px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .copywrite,
+    .info {
+        font-size: 2vw;
+    }
+
+    .hero {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 1rem auto 0 auto;
+    }
+
+    .heroText {
+        padding: 1rem;
+    }
+
+    .heroText p {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 3rem;
+        font-style: italic;
+        justify-content: right;
+        text-align: right;
+        padding-left: 4rem;
+        margin-top: 1rem;
+    }
+
+    .heroText h2 {
+        font-size: 3.5rem;
+        font-weight: normal;
+    }
+
+    #reserve {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    #reserve:hover {
+        background-color: var(--secondary-color);
+        text-decoration: underline;
+    }
+
+    .hero img {
+        max-width: 100%;
+        background-color: white;
+        height: auto;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px var(--primary-color);
+        border-radius: 5px;
+    }
+
+    .customerReviews h2,
+    .deals h2 {
+        font-size: 2rem;
+    }
+
+    #reviews,
+    .dealsInfo {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+    }
+
+    .review-card,
+    .currentDealCard,
+    .upcomingDealCard {
+        font-size: 1.5rem;
+        padding: .5rem;
+    }
+
+    .weather {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+    }
+
+    .weather h2 {
+        font-size: 2rem;
+    }
+
+    .current,
+    #town,
+    .days {
+        font-size: 1.25rem;
+    }
+
+    .days {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .forecast {
+        margin: 0 0 0 1rem;
+    }
+
+    .daily,
+    .current {
+        box-shadow: 0 1px 2px var(--primary-color);
+        border-radius: 5px;
+        margin: .5rem;
+        padding: 1rem;
+
+    }
+
+}

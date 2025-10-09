@@ -1,0 +1,595 @@
+:root {
+    --primary-color: rgb(35, 61, 77);
+    --secondary-color: rgb(161, 193, 129);
+    --background-color: rgb(49, 94, 67);
+    --accent-color: rgb(252, 202, 70);
+
+    --text-color: black;
+
+    --body-font-family: "Cormorant Infant", serif;
+    --heading-font-family: "Original Surfer", sans serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: var(--body-font-family);
+    max-width: 320px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--heading-font-family);
+    color: var(--text-color);
+}
+
+/*---- Basic CSS for the header and footer ----*/
+
+header,
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: .5rem;
+}
+
+.container {
+    display: flex;
+    font-size: 6.5vw;
+    color: white;
+    font-weight: bold;
+}
+
+.container div {
+    padding-top: .5rem;
+}
+
+.logo {
+    max-width: 50px;
+    height: auto;
+    margin-right: 1rem;
+    margin-left: .5rem;
+    margin-top: .25rem;
+    background-color: white;
+    align-content: center;
+    border-radius: 5px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#name {
+    font-family: var(--heading-font-family);
+    color: white;
+    font-size: 8vw;
+}
+
+#menu {
+    border: 0;
+    background: none;
+    position: absolute;
+    right: 2vw;
+    top: 1vw;
+    font-size: 8vw;
+}
+
+#menu::before {
+    content: "☰";
+    color: white;
+}
+
+#menu.open::before {
+    content: "ⓧ";
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--secondary-color);
+
+}
+
+.navigation a {
+    display: block;
+    color: var(--text-color);
+    padding: 3px;
+    text-decoration: none;
+    text-align: center;
+    transition: .5s;
+    font-size: 7vw;
+
+}
+
+.navigation a:hover {
+    color: var(--primary-color);
+    font-weight: bolder;
+    border-radius: 3px;
+    background-color: var(--accent-color);
+}
+
+#animateMe {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+.navigation {
+    overflow: hidden;
+}
+
+#animateMe.open {
+    grid-template-rows: 1fr;
+}
+
+.active::before {
+    content: "Contact Us☀️";
+    text-decoration: underline;
+
+}
+
+h1 {
+    padding-bottom: .25rem;
+    padding-left: .5rem;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+/*--------- Basics for footer ---------*/
+
+footer {
+    border-radius: 5px 5px 0 0;
+    color: white;
+    font-weight: bold;
+}
+
+.info,
+.social,
+.copywrite {
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+.leafyTreetopsLLC {
+    font-size: 7vw;
+}
+
+.email a {
+    color: white;
+    text-decoration: underline;
+}
+
+.socialLinks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: .5rem;
+    justify-content: space-evenly;
+}
+
+.socialLinks a img {
+    max-width: 30px;
+    height: auto;
+}
+
+/*--------- body ---------*/
+
+.officeInfo {
+
+    margin: 1rem;
+    padding: 1rem;
+    border: 5px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+#office img {
+    width: 100%;
+    object-fit: fill;
+    box-shadow: 0 0 10px var(--secondary-color);
+    border-radius: 10px;
+
+}
+
+#map iframe {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: fill;
+
+    border-radius: 10px;
+}
+
+#map p {
+    margin-left: 1rem;
+}
+
+#map figure {
+    margin-top: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+
+.officephone,
+.website,
+.officeaddress {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.website {
+    text-decoration: underline;
+}
+
+.website p:hover, .officeaddress p:hover {
+    color: blue;
+}
+
+.officeaddress a {
+    color: var(--accent2-color);
+}
+
+.officeaddress a:hover {
+    color: var(--accent1-color);
+}
+
+.staff {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    justify-content: center;
+
+}
+
+.staff div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1rem;
+    padding: 1.25rem;
+    background-color: var(--secondary-color);
+    justify-items: center;
+    border-radius: 5px;
+    align-items: center;
+    max-width: 600px;
+
+}
+
+.staff div h2 {
+    color: white;
+}
+
+.staff img {
+    width: 200px;
+    justify-content: center;
+}
+
+.staff p {
+    color: white;
+}
+
+.form {
+    margin: 1rem;
+    border: 3px solid var(--background-color);
+    border-radius: 5px;
+    padding: 10px;
+    /* background-color: var(--tertiary-color); */
+}
+
+.form fieldset {
+    margin: 1rem 0;
+    border: 1px solid var(--background-color);
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: white;
+}
+
+.form legend {
+    padding: 0.5rem;
+    font-style: italic;
+    font-size: 25px;
+    color: var(--background-color);
+    font-weight: bold;
+}
+
+.form label {
+    display: block;
+    font-size: 18px;
+}
+
+.form div {
+    padding-top: 1rem;
+
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="submit"],
+.form input[type="tel"],
+.form input[type="date"],
+.form textarea {
+    display: block;
+    border: 1px solid var(--primary-color);
+    border-radius: 3px;
+    padding: 0.5rem;
+    color: var(--text-color);
+    max-width: 300px;
+    width: 100%;
+    appearance: none;
+    margin-top: .25rem;
+}
+
+.formdate,
+.formemail,
+.pAddress {
+    padding-top: 1rem;
+}
+
+/* .form:placeholder{
+    color: var(--secondary-color);
+} */
+
+.form input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.5);
+    margin-top: 10px;
+}
+
+.form input[type="submit"] {
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 3px;
+    padding: .8rem;
+    width: 90%;
+    max-width: 400px;
+    margin: 1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 7px var(--primary-color);
+    font-size: 20px;
+
+}
+
+.form input[type="submit"]:hover {
+    background-color: white;
+    background-image: none;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    font-weight: bold;
+}
+
+/*--------thank you page-------------*/
+.messageContainer {
+    border: 3px double var(--tertiary-color);
+    margin: 1rem;
+}
+
+.messageContainer h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.verification {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.thankYou {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+
+
+
+/* --------------------------------media medium---------------------------------------------- */
+@media screen and (min-width: 320px) {
+    body {
+        margin: 0 auto;
+        justify-content: center;
+        max-width: 100%;
+        /*prevent horizontal scroll*/
+        overflow-x: hidden;
+        /*prevent horizontal scroll*/
+    }
+
+    header {
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 90px;
+        max-height: 90px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: .5rem;
+    }
+
+    .navigation a {
+        font-weight: bolder;
+
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    #animateMe {
+        grid-template-rows: 1fr;
+    }
+
+    
+
+
+
+    /*-------------- body css --------------*/
+    h1 {
+        padding-left: 1rem;
+        font-size: 8vw;
+    }
+
+
+}
+
+/* --------------------------------media large-------------------------------------------------------------- */
+@media screen and (min-width: 600px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        padding: 1rem;
+    }
+
+    .container {
+        flex-direction: row;
+        justify-content: left;
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        max-width: 100px;
+        height: auto;
+    }
+
+    #name {
+        font-size: 3rem;
+    }
+
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .navigation a {
+        font-size: 2.25rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+    }
+
+    #office {
+        max-width: 815px;
+    }
+
+    .officeInfo {
+        display: grid;
+        grid-gap: 1rem;
+        /* grid-template-columns: 2fr 1fr; */
+        max-width: 1500px;
+        padding: 0.5rem;
+
+    }
+
+    .mapInfo div{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 0;
+    }
+
+
+    
+
+    .form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .25fr auto .25fr;
+    }
+
+    .form fieldset {
+        grid-row: 2 / 3;
+        margin: 1rem;
+        align-items: center;
+    }
+
+    .form input[type="submit"] {
+        grid-row: 3 / 4;
+    }
+
+
+
+    footer {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr auto 1fr;
+        padding: 1rem;
+
+    }
+
+    .leafyTreetopsLLC {
+        font-style: italic;
+        font-size: 1.5rem;
+    }
+
+    .copywrite,
+    .info {
+        text-align: center;
+        font-size: 3vw;
+        font-weight: normal;
+    }
+
+
+    .social {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .socialLinks {
+        display: block;
+    }
+
+    .socialLinks a img {
+        max-width: 50px;
+        margin: .5rem;
+    }
+
+    /*-------------- body css --------------*/
+
+
+
+}
+
+/* --------------------------------media x-large----------------------- */
+@media screen and (min-width: 900px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .copywrite,
+    .info {
+        font-size: 2vw;
+    }
+
+
+
+
+
+
+}

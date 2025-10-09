@@ -1,0 +1,99 @@
+:root {
+    /* --primary-color: rgb(35, 61, 77); */
+    --secondary-color: rgb(161, 193, 129);
+    --primary-color: rgb(73, 144, 103);
+    --accent-color: rgb(252, 202, 70);
+
+    --text-color: black;
+
+    --body-font-family: "Cormorant Infant", serif;
+    --heading-font-family: "Original Surfer", sans serif;
+}
+
+.primaryColor {
+    color: var(--primary-color);
+}
+
+.secondaryColor {
+    color: var(--secondary-color);
+}
+
+.accentColor {
+    color: var(--accent-color);
+}
+
+.textColor {
+    color: var(--text-color);
+}
+
+.headings {
+    font-family: var(--heading-font-family);
+}
+
+.body {
+    font-family: var(--body-font-family);
+}
+
+header, footer {
+    background-color: var(--primary-color);
+
+}
+
+footer {
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+footer p {
+    
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0 1rem;
+
+}
+
+.leafyTreetopsLLC {
+    font-style: italic;
+    /* font-size: 4vw; */
+}
+
+/* .address,
+.phone,
+.email {
+    font-size: 4vw;
+} */
+
+.email a {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.socialLinks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: .5rem;
+    
+}
+
+.socialLinks a img {
+    max-width: 30px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+h1, h2 {
+    font-family: var(--heading-font-family);
+    
+}
+
+h2 {
+    background-color: var(--secondary-color);
+}
+
+body {
+    font-family: var(--body-font-family);
+}
+
+

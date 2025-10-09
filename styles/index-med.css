@@ -1,0 +1,73 @@
+/* --------------------------------media medium--------------------- */
+@media screen and (min-width: 320px) {
+    body {
+        margin: 0 auto;
+        justify-content: center;
+        max-width: 100%;
+        /*prevent horizontal scroll*/
+        overflow-x: hidden;
+        /*prevent horizontal scroll*/
+    }
+
+    header {
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 90px;
+        max-height: 90px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: .5rem;
+    }
+
+    .navigation a {
+        font-weight: bolder;
+
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    #animateMe {
+        grid-template-rows: 1fr;
+    }
+
+    .active::before {
+        content: "Home☀️";
+    }
+
+    
+
+    /*-------------- body css --------------*/
+    h1 {
+
+        padding-left: 1rem;
+        font-size: 8vw;
+    }
+
+    .hero h1 {
+        font-size: 6.5vw;
+        text-align: center;
+    }
+
+    .heroText {
+        display: flex;
+        padding: .25rem;
+    }
+
+    #reserve {
+        position: static;
+        margin: 2rem 0;
+        
+    }
+
+}
