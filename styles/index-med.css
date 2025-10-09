@@ -42,7 +42,9 @@
     }
 
     .active::before {
-        content: "Home☀️";
+        content: "✦ Home";
+        text-decoration: none;
+        
     }
 
     
