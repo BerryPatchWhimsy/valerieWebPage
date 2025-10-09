@@ -1,7 +1,7 @@
 import { updateCurrentYear, updateLastModified } from "./getdate.mjs";
 import { createCurrentSpecialCard, createUpcomingSpecialCard } from "./deals-cards.mjs";
 
-document.querySelector("#name").innerHTML = "Leafy Treetops";
+document.querySelector("#name").innerHTML = "Valeria's Boutique";
 
 updateCurrentYear();
 updateLastModified();
@@ -15,11 +15,11 @@ button.addEventListener("click", () => {
 });
 
 
-const reserveButton = document.querySelector("#reserve");
+//const reserveButton = document.querySelector("#reserve");
 
-reserveButton.addEventListener("click",  () => {
-    window.location.href = "https://berrypatchwhimsy.github.io/wdd231/project/contact-us.html";
-})
+//reserveButton.addEventListener("click",  () => {
+//    window.location.href = "https://berrypatchwhimsy.github.io/wdd231/project/contact-us.html";
+//})
 
 const dealsContainer = document.querySelector(".dealsInfo");
 

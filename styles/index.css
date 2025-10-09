@@ -1,8 +1,23 @@
 :root {
-    --primary-color: rgb(35, 61, 77);
-    --secondary-color: rgb(161, 193, 129);
-    --background-color: rgb(49, 94, 67);
-    --accent-color: rgb(252, 202, 70);
+    /* --primary-color: rgb(43, 25, 61);
+    --secondary-color: rgb(197, 151, 157);
+    --background-color: rgb(72, 77, 109);
+    --accent-color: rgb(75, 143, 140);
+
+    --primary-color: rgb(176, 158, 153);
+    --secondary-color: rgb(254, 233, 225);
+    --background-color: rgb(250, 212, 192);
+    --accent-color: rgb(100, 182, 140);
+
+    --primary-color: rgb(98, 190, 193);
+    --secondary-color: rgb(219, 186, 221);
+    --background-color: rgb(33, 1, 36);
+    --accent-color: rgb(117, 13, 55); */
+
+    --primary-color: rgb(254,233,225);
+    --secondary-color: rgb(254, 233, 225);
+    --background-color: rgb(153, 114, 130);
+    --accent-color: rgb(98, 149, 150);
 
     --text-color: black;
 
@@ -135,7 +150,7 @@ footer {
 }
 
 .active::before {
-    content: "☀️Home";
+    content: "💎Home";
     text-decoration: underline;
 
 }
