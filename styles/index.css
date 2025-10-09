@@ -230,10 +230,11 @@ main {
 .heroText {
     position: relative;
     margin: .5rem;
-    top: -30vw;
-    left: -10px;
+    top: -63vw;
+    left: -.5rem;
     height: auto;
     background-color: var(--secondary-color);
+    border-radius: 0 5px 5px 0;
     /* opacity: .85; */
     
 }

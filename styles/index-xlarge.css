@@ -18,16 +18,18 @@
 
     .heroText {
         padding: 1rem;
+        display: block;
+        /* justify-content: right; */
     }
 
     .heroText p {
         display: flex;
         flex-wrap: wrap;
-        font-size: 3rem;
+        font-size: 3vw;
         font-style: italic;
         justify-content: right;
         text-align: right;
-        padding-left: 4rem;
+        padding-right: 0;
         margin-top: 1rem;
     }
 
