@@ -23,11 +23,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Original+Surfer&display=swap"
         rel="stylesheet"> -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Galada&family=Gwendolyn:wght@400;700&family=Meie+Script&family=Parisienne&family=Radley:ital@0;1&family=Tangerine:wght@400;700&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Galada&family=Gwendolyn:wght@400;700&family=Meie+Script&family=Parisienne&family=Radley:ital@0;1&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/index-med.css" media="(min-width: 320px)">
@@ -52,48 +52,29 @@
         </div>
     </header>
     <main>
-        <h1>Home Page</h1>
+        <h1>Rentals Page</h1>
         <nav id="animateMe">
             <ul class="navigation">
-                <li><a href="index.html" title="Home" class="active"></a></li>
-                <li><a href="baby.html" title="Baby">Baby</a></li>
-                <li><a href="bridal.html" title="Bridal">Bridal</a></li>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="rentals.html" title="Rentals" class="active"></a></li>
                 <li><a href="contact-us.html" title="Contact">Contact Us</a></li>
-
+    
             </ul>
         </nav>
-        <div class="hero">
-            <picture>
-                <source srcset="images/hero-small.webp" media="(max-width: 320px)">
-                <source srcset="images/hero.webp" media="(max-width: 5000px)">
-                <img src="images/hero.webp" alt="Threaded Bobbins" width="5000" height="3333">
-            </picture>
-            <div class="heroText">
-                <h2>Welcome to Valeria's!!</h2>
-                <p>We love creating beautiful things for your special occasion.</p>
-                <!-- <button id="reserve">Reserve Now!</button> -->
-            </div>
+        <div class="cardMenu">
+            <button id="grid">🀜 Grid</button>
+            <button id="list">☰ List</button>
         </div>
-        <div class="deals">
-            <h2>Special Deals</h2>
-            <div class="dealsInfo"></div>
-        </div>
-        <!-- <div class="weather">
-            <div>
-                <h2>Current Weather</h2>
-                <h3 id="town">Marshall, North Carolina</h3>
-                <div class="current"></div>
-            </div>
-            <div class="forecast">
-                <h2>3 Day Forecast</h2>
-                <div class="days">
-                </div>
-            </div>
-        </div> -->
-        <div class="customerReviews">
-            <h2>Customer Reviews</h2>
-            <div id="reviews"></div>
-        </div>
+        <!-- <nav class="rentalsNav">
+                <ul>
+                    <li><a href="#" id="1" class="active">All Rentals</a></li>
+                    <li><a href="#" id="treehouses">Treehouses</a></li>
+                    <li><a href="#" id="handicap">Handicap Accessible</a></li>
+                    <li><a href="#" id="glamping">Glamping</a></li>
+                </ul>
+            </nav> -->
+        <div id="rentalsContainer"></div>
+    
     </main>
     <footer>
         <div class="info">
