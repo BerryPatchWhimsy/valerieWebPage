@@ -15,7 +15,7 @@ randomReviews.forEach(review => {
     let card = document.createElement("div");
     card.classList.add("review-card");
     card.innerHTML = `
-    <h3>${review.name}</h3>
+    <h4>${review.name}</h4>
     <p>⭐️ ${review.rating}/5</p>
     <p>From: ${review.place}</p>
     <p>"${review.comment}"</p>

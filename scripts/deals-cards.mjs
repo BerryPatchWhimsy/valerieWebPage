@@ -8,12 +8,12 @@ export function createCurrentSpecialCard() {
     const card = document.createElement("div");
     card.classList.add("currentDealCard");
 
-    const currentDealHeader = document.createElement("h3");
+    const currentDealHeader = document.createElement("h4");
     currentDealHeader.textContent = "Current";
     currentDealHeader.classList.add("currentDealHeader");
     card.appendChild(currentDealHeader);
 
-    const title = document.createElement("h3");
+    const title = document.createElement("h4");
     title.textContent = currentSpecial.holiday;
     card.appendChild(title);
 
@@ -47,12 +47,12 @@ export function createUpcomingSpecialCard() {
     const card = document.createElement("div");
     card.classList.add("upcomingDealCard");
 
-    const upcomingDealHeader = document.createElement("h3");
+    const upcomingDealHeader = document.createElement("h4");
     upcomingDealHeader.textContent = "Upcoming";
     upcomingDealHeader.classList.add("upcomingDealHeader");
     card.appendChild(upcomingDealHeader);
 
-    const title = document.createElement("h3");
+    const title = document.createElement("h4");
     title.textContent = upcomingSpecial.holiday;
     card.appendChild(title);
 
