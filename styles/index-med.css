@@ -24,12 +24,13 @@
 
     .navigation {
         flex-direction: row;
-        justify-content: space-between;
-        padding: .5rem;
+        justify-content: space-evenly;
+
     }
 
     .navigation a {
         font-weight: bolder;
+        padding: .5rem;
 
     }
 
@@ -44,10 +45,10 @@
     .active::before {
         content: "✦ Home";
         text-decoration: none;
-        
+
     }
 
-    
+
 
     /*-------------- body css --------------*/
     h1 {
@@ -61,16 +62,22 @@
         text-align: center;
     }
 
-    .heroText {
+    .heroText p {
         display: flex;
         padding: .25rem;
-        
+        font-size: 4vw;
+        text-align: right;
+
     }
 
+    .description {
+        padding: 1rem;
+    }
+    
     #reserve {
         position: static;
         margin: 2rem 0;
-        
+
     }
 
 }
