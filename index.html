@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/val-logo.webp">
+    <link rel="icon" href="images/val-logo.svg">
     <title>Valeria's Boutique Home Page</title>
     <meta name="description" content="Valeria's Boutique Home Page | valeriasboutique.com">
     <meta name="author" content="Anissa Pooley">
@@ -23,11 +23,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Updock&display=swap"
         rel="stylesheet">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-    href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Galada&family=Gwendolyn:wght@400;700&family=Meie+Script&family=Parisienne&family=Radley:ital@0;1&family=Tangerine:wght@400;700&display=swap"
-    rel="stylesheet"> -->
 
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/index-med.css" media="(min-width: 320px)">
@@ -41,14 +36,13 @@
             <picture class="logo">
                 <!-- <source srcset="images/logo-pic-small.webp" media="(max-width: 320px)"> -->
                 <!-- <source srcset="images/logo-pic.webp" media="(max-width: 1200px)"> -->
-                <img src="images/vb-logo.webp" alt="Valeria's Boutique Logo" width="350" height="350">
+                <img src="images/val-logo.svg" alt="Valeria's Boutique Logo" width="350" height="350">
             </picture>
             <div>
                 <span id="name"></span>
                 <p>Bridal and Baby</p>
             </div>
             <button id="menu" title="Hamburger Menu"></button>
-
         </div>
     </header>
     <main>
@@ -69,10 +63,14 @@
                 <img src="images/hero.webp" alt="Threaded Bobbins" width="5000" height="3333">
             </picture>
             <div class="heroText">
-                <h2>Welcome to Valeria's!!</h2>
+                <h2>Welcome to Valeria's!</h2>
                 <p>We love creating beautiful things for your special occasion.</p>
                 <!-- <button id="reserve">Reserve Now!</button> -->
             </div>
+        </div>
+        <div class="description">
+            <p>At Valeria's you will find handcrafted quilts for your precious bundle of joy, custom-made veils, and bridal accessories.</p>
+            <p>Everything is made with care and love.</p>
         </div>
         <div class="customerReviews">
             <h3>Customer Reviews</h3>
@@ -82,26 +80,13 @@
             <h3>Special Deals</h3>
             <div class="dealsInfo"></div>
         </div> -->
-        <!-- <div class="weather">
-            <div>
-                <h2>Current Weather</h2>
-                <h3 id="town">Marshall, North Carolina</h3>
-                <div class="current"></div>
-            </div>
-            <div class="forecast">
-                <h2>3 Day Forecast</h2>
-                <div class="days">
-                </div>
-            </div>
-        </div> -->
-        
     </main>
     <footer>
         <div class="info">
             <p class="company">Valeria's Boutique</p>
             <!-- <p>Address</p> -->
             <!-- <p>Phone Number</p> -->
-            <p class="email"><a href="mailto:info@email.com">info@email.com</a>
+            <p class="email"><a href="sales@babyvals.com">sales@babyvals.com</a>
         </div>
         <div class="social">
             <nav class="socialLinks">
@@ -114,9 +99,8 @@
             </nav>
         </div>
         <div class="copywrite">
-            <!-- <p>WDD 231 - Class Project</p> -->
-            <p>BerryPatchWhimsy</p>
             <p> &copy; <span id="currentyear"></span>Valeria's Boutique</p>
+            <p>Created by BerryPatchWhimsy</p>
             <p id="lastModified"></p>
         </div>
     </footer>
