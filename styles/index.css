@@ -1,12 +1,14 @@
 :root {
+    --primary-color: rgb(242, 233, 220);
+    
+    --background-color: rgb(116, 140, 171);
+    /* --accent-color: rgb(112,76,94); */
+    --accent-color: rgb(90, 113, 106);
+    --body-color: rgb(242, 233, 220);
 
-    --secondary-color: rgb(254, 233, 225);
-    --background-color: rgb(40, 124, 97);
-    --primary-color: rgb(254, 233, 225);
-    --accent-color: rgb(144, 119, 148);
-
-    --text-color: black;
-    --text-heading-color: rgb(254, 233, 225);
+    --text-color: rgb(46, 33, 53);
+    --text-2ndary-color: rgb(63, 48, 71);
+    /* --text-heading-color: rgb(254, 233, 225); */
 
     --body-font-family: "Kantumruy Pro", sans serif, 100;
     --heading-font1-family: "Updock", italic;
@@ -23,14 +25,19 @@ body {
     grid-template-columns: 1fr;
     font-family: var(--body-font-family);
     max-width: 320px;
+    background-color: var(--body-color);
 
 }
 
-h1,
+h1 {
+    font-family: var(--body-font-family);
+    color: var(--text-2ndary-color);
+}
+
 h3,
 h4 {
     font-family: var(--heading-font-family);
-    color: black;
+    color: var(--text-color);
 }
 
 h2 {
@@ -50,7 +57,7 @@ footer {
 .container {
     display: flex;
     font-size: 6.5vw;
-    color: var(--text-heading-color);
+    color: var(--text-color);
 }
 
 .container div {
@@ -59,6 +66,7 @@ footer {
 
 .container p {
     padding-left: 1rem;
+    font-family: var(--heading-font-family);
 }
 
 .logo {
@@ -124,9 +132,9 @@ footer {
 }
 
 .navigation a:hover,
-#reserve:hover {
+#reserve:hover,
+.active:hover::before {
     color: var(--primary-color);
-
     font-weight: bolder;
     border-radius: 3px;
     background-color: var(--accent-color);
@@ -152,6 +160,8 @@ footer {
     color: var(--accent-color);
 
 }
+
+
 
 /*--------- Basics for footer ---------*/
 
@@ -278,8 +288,8 @@ main {
     font-size: 10vw;
     font-weight: bold;
     text-align: center;
-    color: var(--background-color);
-    border: 3px, dashed, var(--accent-color);
+    color: var(--text-2ndary-color);
+    border: 3px, dashed, var(--background-color);
     /* radial-gradient(circle at center, var(--secondary-color) 0%, var(--accent-color) 70%, var(--secondary-color) 80%); */
     padding: .5rem;
     border-radius: 5px;
@@ -291,7 +301,8 @@ main {
 
 .customerReviews,
 .deals {
-    background-color: var(--secondary-color);
+
+    border: 2pt solid var(--background-color);
     border-radius: 5px;
     padding: 0;
 }
@@ -301,7 +312,6 @@ main {
     font-size: 7vw;
     text-align: center;
     background-color: var(--background-color);
-    border-radius: 5px;
     padding: .5rem;
     color: var(--text-color);
 }
