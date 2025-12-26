@@ -29,4 +29,4 @@ dealsContainer.appendChild(createCurrentSpecialCard());
 createUpcomingSpecialCard();
 dealsContainer.appendChild(createUpcomingSpecialCard());
 
-document.querySelector("#name2").innerHTML = "Valeria's Boutique";
+
