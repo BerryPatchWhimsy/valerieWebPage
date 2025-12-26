@@ -86,7 +86,7 @@ footer {
     border-radius: 5px;
 }
 
-#name {
+#name, #name2 {
     font-family: var(--heading-font1-family);
     color: var(--text-heading-color);
     font-size: 12vw;
@@ -239,7 +239,7 @@ main {
 .heroText {
     position: relative;
     margin: .5rem;
-    top: -55vw;
+    top: 0vw;
     left: -.5rem;
     height: auto;
     background-color: var(--secondary-color);
