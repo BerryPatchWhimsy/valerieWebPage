@@ -1,0 +1,380 @@
+:root {
+    --primary-color: rgb(255, 249, 240);
+    --accent-color: rgb(116, 140, 171);
+    --background-color: rgb(90, 113, 106);
+    --body-color: rgb(255, 249, 240);
+
+    --text-color: rgb(46, 33, 53);
+    --text-2ndary-color: rgb(63, 48, 71);
+
+    --body-font-family: "Kantumruy Pro", sans serif, 100;
+    --heading-fancy-font: "Updock", italic;
+    /*script typ font*/
+    --heading-font-family: "Charm", italic;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: var(--body-font-family);
+    max-width: 320px;
+    background-color: var(--body-color);
+
+}
+
+h1 {
+    font-family: var(--body-font-family);
+    color: var(--text-2ndary-color);
+}
+
+h3,
+h4 {
+    font-family: var(--heading-font-family);
+    color: var(--text-color);
+}
+
+h2 {
+    font-family: var(--heading-fancy-font);
+    color: var(--text-color);
+}
+
+/*---- Basic CSS for the header and footer ----*/
+
+header,
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: .5rem;
+}
+
+.container {
+    display: flex;
+    font-size: 8vw;
+    color: var(--primary-color);
+}
+
+.container div {
+    padding-top: .5rem;
+}
+
+.container p {
+    padding-left: 1rem;
+    font-family: var(--heading-font-family);
+
+}
+
+.logo {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 1rem;
+    margin-left: .5rem;
+    margin-top: .25rem;
+    background-color: white;
+    align-content: center;
+    border-radius: 5px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#name {
+    font-family: var(--heading-fancy-font);
+    color: var(--primary-color);
+    font-size: 12vw;
+    font-weight: bold;
+}
+
+#menu {
+    border: 0;
+    background: none;
+    position: absolute;
+    right: 2vw;
+    top: 1vw;
+    font-size: 8vw;
+}
+
+#menu::before {
+    content: "☰";
+    color: white;
+}
+
+#menu.open::before {
+    content: "ⅹ";
+    color: var(--primary-color);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--background-color);
+    padding: 0;
+
+}
+
+.navigation a {
+    display: block;
+    color: var(--primary-color);
+    padding: 3px;
+    text-decoration: none;
+    text-align: center;
+    transition: .5s;
+    font-size: 7vw;
+
+}
+
+.navigation a:hover,
+#reserve:hover,
+.active:hover::before {
+    color: var(--primary-color);
+    font-weight: bolder;
+    border-radius: 3px;
+    background-color: var(--accent-color);
+}
+
+#animateMe {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+.navigation {
+    overflow: hidden;
+}
+
+#animateMe.open {
+    grid-template-rows: 1fr;
+}
+
+.active::before {
+    content: "✦ Baby";
+    text-decoration: underline;
+    /* color: var(--accent-color); */
+
+}
+
+
+
+/*--------- Basics for footer ---------*/
+
+footer {
+    border-radius: 5px 5px 0 0;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.info,
+.social {
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+.copywrite {
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.company {
+    font-size: 13vw;
+    font-family: var(--heading-fancy-font);
+}
+
+.email a {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.socialLinks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: .5rem;
+    justify-content: left;
+}
+
+.socialLinks a img {
+    max-width: 30px;
+    height: auto;
+}
+
+/*--------- body ---------*/
+.customerReviews,
+.deals {
+    margin: 1rem;
+}
+
+h1 {
+    padding-bottom: .25rem;
+    padding-left: .5rem;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+/*--------- hero ---------*/
+main {
+    background-color: white;
+}
+
+.hero {
+    background-color: white;
+    padding: .5rem;
+    border-radius: 0 0 5px 5px;
+
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 2px 4px var(--primary-color);
+    border-radius: 5px;
+}
+
+
+
+.heroText {
+    position: relative;
+    margin: .5rem;
+    top: 0vw;
+    left: -.5rem;
+    height: auto;
+    background-color: var(--secondary-color);
+    border-radius: 0 5px 5px 0;
+    /* opacity: .85; */
+
+}
+
+.heroText h2 {
+    border: none;
+    color: var(--text-2ndary-color);
+    font-size: 14vw;
+    text-align: center;
+}
+
+.heroText p {
+    display: none;
+}
+
+
+
+#reserve {
+    display: block;
+    position: relative;
+    top: -5vw;
+    left: 50vw;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    font-size: 4.5vw;
+    font-weight: bold;
+    text-align: center;
+    padding: .25rem;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+
+
+/* reserve:hover same as nav:hover */
+
+/*--------- reviews and deals ---------*/
+
+.description {
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    font-family: var(--heading-font-family);
+    font-size: 10vw;
+    font-weight: bold;
+    text-align: center;
+    color: var(--text-2ndary-color);
+    border: 3px, dashed, var(--background-color);
+    /* radial-gradient(circle at center, var(--secondary-color) 0%, var(--accent-color) 70%, var(--secondary-color) 80%); */
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.description p {
+    margin-bottom: 2rem;
+}
+
+.customerReviews,
+.deals {
+
+    border: 2pt solid var(--background-color);
+    border-radius: 5px;
+    padding: 0;
+}
+
+.customerReviews h3,
+.deals h3 {
+    font-size: 7vw;
+    text-align: center;
+    background-color: var(--background-color);
+    padding: .5rem;
+    color: var(--text-color);
+}
+
+
+.review-card,
+.currentDealCard,
+.upcomingDealCard,
+.current,
+#town,
+.days,
+#reviews,
+.dealsInfo {
+    font-size: 6vw;
+    padding: .5rem;
+}
+
+.currentDealHeader,
+.upcomingDealHeader {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/*--------- weather ---------*/
+/* .weather {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: .5rem;
+    text-align: center;
+}
+
+.weather h2 {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: .5rem;
+    border-radius: 5px;
+    font-size: 7vw;
+}
+
+
+.current,
+.days {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.forecast {
+    margin-top: 1rem;
+}
+
+.daily,
+.current {
+    box-shadow: 0 1px 2px var(--primary-color);
+    border-radius: 5px;
+    margin: .5rem;
+    padding: 1rem;
+
+} */
