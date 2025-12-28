@@ -1,17 +1,14 @@
 :root {
-    --primary-color: rgb(242, 233, 220);
-    
-    --background-color: rgb(116, 140, 171);
-    /* --accent-color: rgb(112,76,94); */
-    --accent-color: rgb(90, 113, 106);
-    --body-color: rgb(242, 233, 220);
+    --primary-color: rgb(255, 249, 240);
+    --accent-color: rgb(116, 140, 171);
+    --background-color: rgb(90, 113, 106);
+    --body-color: rgb(255, 249, 240);
 
     --text-color: rgb(46, 33, 53);
     --text-2ndary-color: rgb(63, 48, 71);
-    /* --text-heading-color: rgb(254, 233, 225); */
 
     --body-font-family: "Kantumruy Pro", sans serif, 100;
-    --heading-font1-family: "Updock", italic;
+    --heading-fancy-font: "Updock", italic;/*script typ font*/
     --heading-font-family: "Charm", italic;
 }
 
@@ -41,7 +38,7 @@ h4 {
 }
 
 h2 {
-    font-family: var(--heading-font1-family);
+    font-family: var(--heading-fancy-font);
     color: var(--text-color);
 }
 
@@ -57,7 +54,7 @@ footer {
 .container {
     display: flex;
     font-size: 8vw;
-    color: var(--text-color);
+    color: var(--primary-color);
 }
 
 .container div {
@@ -88,8 +85,8 @@ footer {
 }
 
 #name {
-    font-family: var(--heading-font1-family);
-    color: var(--text-color);
+    font-family: var(--heading-fancy-font);
+    color: var(--primary-color);
     font-size: 12vw;
     font-weight: bold;
 }
@@ -109,7 +106,7 @@ footer {
 }
 
 #menu.open::before {
-    content: "✖️";
+    content: "ⅹ";
     color: var(--primary-color);
 }
 
@@ -117,14 +114,14 @@ footer {
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
     padding: 0;
 
 }
 
 .navigation a {
     display: block;
-    color: var(--text-color);
+    color: var(--primary-color);
     padding: 3px;
     text-decoration: none;
     text-align: center;
@@ -159,7 +156,7 @@ footer {
 .active::before {
     content: "✦ Home";
     text-decoration: underline;
-    color: var(--accent-color);
+    /* color: var(--accent-color); */
 
 }
 
@@ -186,7 +183,7 @@ footer {
 
 .company {
     font-size: 13vw;
-    font-family: var(--heading-font1-family);
+    font-family: var(--heading-fancy-font);
 }
 
 .email a {
@@ -290,7 +287,7 @@ main {
 /*--------- reviews and deals ---------*/
 
 .description {
-    margin: 1.5rem;
+    margin: 0 1.5rem 1.5rem 1.5rem;
     font-family: var(--heading-font-family);
     font-size: 10vw;
     font-weight: bold;
