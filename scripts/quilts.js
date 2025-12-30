@@ -1,37 +1,37 @@
 import { updateCurrentYear, updateLastModified } from "./getdate.mjs";
 
 
-document.querySelector("#name").innerHTML = "Leafy Treetops";
+document.querySelector("#name").innerHTML = "Valeria's Boutique";
 
 updateCurrentYear();
 updateLastModified();
 
 const button = document.querySelector("#menu");
 const navigation = document.querySelector("#animateMe");
-const container = document.querySelector("#rentalsContainer");
+const container = document.querySelector("#quiltsContainer");
 
 button.addEventListener("click", () => {
     navigation.classList.toggle("open");
     button.classList.toggle("open");
 });
 
-const treehousesList = "https://BerryPatchWhimsy.github.io/wdd231/project/data/rentals.json";
-async function getTreehouseData() {
+const quiltsList = "https://BerryPatchWhimsy.github.io/wdd231/project/data/quilts.json";
+async function getQuiltsData() {
     try {
-        const response = await fetch(treehousesList);
+        const response = await fetch(quiltsList);
         if (!response.ok) {
             throw new Error(`Fetch error: ${response.status} ${response.statusText}`);
         }
         const data = await response.json();
-        displayTreehouses(data.rentals); // Adjust this function as needed for your data structure
+        displayQuilts(data.quilts); // Adjust this function as needed for your data structure
     } catch (error) {
-        console.error("Error loading treehouse data:", error);
+        console.error("Error loading quilt data:", error);
         // Optional: display a message in the UI
-        document.querySelector("#treehouse-container").innerHTML = "<p>Unable to load treehouse rentals at this time.</p>";
+        document.querySelector("#quiltsContainer").innerHTML = "<p>Unable to load quilt information at this time.</p>";
     }
 }
 
-getTreehouseData();
+getQuiltsData();
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
@@ -52,15 +52,15 @@ function showlist() {
 
 
 
-const displayTreehouses = (treehouses) => {
+const displayQuilts = (quilts) => {
 
-    treehouses.forEach(treehouse => {
+    quilts.forEach(quilt => {
 
         const card = document.createElement("div");
-        card.className = "treehouse-card";
+        card.className = "quilt-card";
 
         const getAvailability = () => {
-            const availability = treehouse.availability;
+            const availability = quilt.availability;
             if (availability == true) {
                 return `Available`;
             } else {
@@ -74,11 +74,11 @@ const displayTreehouses = (treehouses) => {
 
 
         card.innerHTML = `
-        <img src="${treehouse.imageURL}" alt="${treehouse.name}" loading="lazy" width="400" height="300">
-        <h2>${treehouse.name}</h2>
+        <img src="${quilt.imageURL}" alt="${quilt.name}" loading="lazy" width="400" height="300">
+        <h2>${quilt.name}</h2>
         <ul>
-          <li><strong>Price:</strong> $${treehouse.price} / night</li>
-          <li><strong>Beds:</strong> ${treehouse.numberOfBeds}</li>
+          <li><strong>Price:</strong> $${quilt.price} / night</li>
+          <li><strong>Beds:</strong> ${quilt.numberOfBeds}</li>
           <li><strong>Availability:</strong> ${available.textContent}</li>
         </ul>
       `;
@@ -86,7 +86,7 @@ const displayTreehouses = (treehouses) => {
 
 
         let info = document.createElement("button");
-        info.classList.add("treehouseInfo");
+        info.classList.add("quiltInfo");
         info.textContent = "Learn more";
         card.appendChild(info);
 
@@ -94,16 +94,15 @@ const displayTreehouses = (treehouses) => {
         container.appendChild(card);
 
         let dialog = document.createElement("dialog");
-        dialog.classList.add("treehouse-dialog");
+        dialog.classList.add("quilt-dialog");
         // dialog.id.add = `${name}`;
         dialog.innerHTML = `
-                <h3>${treehouse.name}</h3>
+                <h3>${quilt.name}</h3>
                 <ul>
-                    <li><strong>Price:</strong> $${treehouse.price} / night</li>
-                    <li><strong>Beds:</strong> ${treehouse.numberOfBeds}</li>
-                    <li><strong>Square Footage:</strong> ${treehouse.squareFootage} sq ft</li>
-
-                    <li><strong>Descriptions:</strong> ${treehouse.description}</li>
+                    <li><strong>Price:</strong> $${quilt.price} / night</li>
+                    <li><strong>Beds:</strong> ${quilt.numberOfBeds}</li>
+                    <li><strong>Square Footage:</strong> ${quilt.squareFootage} sq ft</li>
+                    <li><strong>Descriptions:</strong> ${quilt.description}</li>
                 </ul>
                 <a href="${treehouse.imageArtistInfo}" target="_blank">Photo Credit</a>
                 <button class="close-button">ⓧ</button>

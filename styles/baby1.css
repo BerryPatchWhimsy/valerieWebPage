@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --primary-color: rgb(35, 61, 77);
     --secondary-color: rgb(161, 193, 129);
     --background-color: rgb(49, 94, 67);
@@ -8,6 +8,21 @@
 
     --body-font-family: "Cormorant Infant", serif;
     --heading-font-family: "Original Surfer", sans serif;
+} */
+
+:root {
+    --primary-color: rgb(255, 249, 240);
+    --accent-color: rgb(116, 140, 171);
+    --background-color: rgb(90, 113, 106);
+    --body-color: rgb(255, 249, 240);
+
+    --text-color: rgb(46, 33, 53);
+    --text-2ndary-color: rgb(63, 48, 71);
+
+    --body-font-family: "Kantumruy Pro", sans serif, 100;
+    --heading-fancy-font: "Updock", italic;
+    /*script typ font*/
+    --heading-font-family: "Charm", italic;
 }
 
 * {
@@ -22,9 +37,20 @@ body {
     max-width: 320px;
 }
 
-h1,
-h2,
-h3 {
+h1 {
+    font-family: var(--body-font-family);
+    color: var(--text-2ndary-color);
+}
+
+
+h2 {
+    font-family: var(--heading-fancy-font);
+    color: var(--text-color);
+}
+
+
+h3,
+h4 {
     font-family: var(--heading-font-family);
     color: var(--text-color);
 }
@@ -40,18 +66,23 @@ footer {
 
 .container {
     display: flex;
-    font-size: 6.5vw;
-    color: white;
-    font-weight: bold;
+    font-size: 8vw;
+    color: var(--primary-color);
 }
 
 .container div {
     padding-top: .5rem;
 }
 
+.container p {
+    padding-left: 1rem;
+    font-family: var(--heading-font-family);
+
+}
+
 .logo {
     max-width: 50px;
-    height: auto;
+    height: 50px;
     margin-right: 1rem;
     margin-left: .5rem;
     margin-top: .25rem;
@@ -67,9 +98,10 @@ footer {
 }
 
 #name {
-    font-family: var(--heading-font-family);
-    color: white;
-    font-size: 8vw;
+    font-family: var(--heading-fancy-font);
+    color: var(--primary-color);
+    font-size: 12vw;
+    font-weight: bold;
 }
 
 #menu {
@@ -87,21 +119,21 @@ footer {
 }
 
 #menu.open::before {
-    content: "ⓧ";
-    color: white;
+    content: "ⅹ";
+    color: var(--primary-color);
 }
 
 .navigation {
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: var(--secondary-color);
-
+    background-color: var(--background-color);
+    padding: 0;
 }
 
 .navigation a {
     display: block;
-    color: var(--text-color);
+    color: var(--primary-color);
     padding: 3px;
     text-decoration: none;
     text-align: center;
@@ -111,9 +143,9 @@ footer {
 }
 
 .navigation a:hover,
-.treehouseInfo:hover {
+#reserve:hover,
+.active:hover::before {
     color: var(--primary-color);
-    
     font-weight: bolder;
     border-radius: 3px;
     background-color: var(--accent-color);
@@ -134,39 +166,36 @@ footer {
 }
 
 .active::before {
-    content: "☀️Rentals";
+    content: "✦ Baby";
     text-decoration: underline;
 
-}
-
-h1 {
-    padding-bottom: .25rem;
-    padding-left: .5rem;
-    text-align: center;
-    background-color: var(--secondary-color);
 }
 
 /*--------- Basics for footer ---------*/
 
 footer {
     border-radius: 5px 5px 0 0;
-    color: white;
+    color: var(--text-color);
     font-weight: bold;
 }
 
 .info,
-.social,
-.copywrite {
+.social{
     font-size: 6vw;
     font-weight: bold;
 }
 
-.leafyTreetopsLLC {
+.copywrite {
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.company {
     font-size: 7vw;
 }
 
 .email a {
-    color: white;
+    color: var(--text-color);
     text-decoration: underline;
 }
 
@@ -175,7 +204,7 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     margin: .5rem;
-    justify-content: space-evenly;
+    justify-content: left;
 }
 
 .socialLinks a img {
@@ -369,7 +398,8 @@ dialog ul {
 
     .navigation a {
         font-weight: bolder;
-
+        font-size: 6vw;
+        padding: .5rem;
     }
 
     .navigation li {
@@ -381,7 +411,12 @@ dialog ul {
     }
 
     .active::before {
-        content: "Rentals☀️";
+        content: "✦ Home";
+        text-decoration: none;
+    }
+
+    #name {
+        font-size: 10vw;
     }
 
 
@@ -389,7 +424,13 @@ dialog ul {
     /*-------------- body css --------------*/
     h1 {
         padding-left: 1rem;
-        font-size: 8vw;
+        font-size: 2rem;
+    }
+
+    /*-------------- footer css --------------*/
+    .socialLinks a img {
+        max-width: 40px;
+        height: auto;
     }
 
 
