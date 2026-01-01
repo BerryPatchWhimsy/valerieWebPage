@@ -2,8 +2,8 @@
     "quilts": [
         {
             "name": "Bears and Bubbles",
-            "size inches": "52 x 46",
-            "Washing instructions": "Machine washable, tumble dry.",
+            "sizeInches": "52 x 46",
+            "washingInstructions": "Machine washable, tumble dry.",
             "price": 65,
             "imageURL": "https://https://BerryPatchWhimsy.github.io/valerieWebPage/images/whispering-pines.webp",
             "image2URL": "",
@@ -12,18 +12,18 @@
         },
         {
             "name": "Blue and White Puppies",
-            "size inches": "50 x 47",
-            "Washing instructions": "Machine washable, tumble dry.",
+            "sizeInches": "50 x 47",
+            "washingInstructions": "Machine washable, tumble dry.",
             "price": 45,
             "imageURL": "https://https://BerryPatchWhimsy.github.io/valerieWebPage/images/whispering-pines.webp",
             "image2URL": "",
-            "description": "Beautifully made quilt with squares of baby blue cotton, white and blue puppies. The back of the quilt is similar colors. 2 inch ruffle border. Machine and hand sewn. ",
+            "description": "Lovingly made with squares of baby blue cotton, white and blue puppies. The back of the quilt is similar colors. 2 inch ruffle border. Machine and hand sewn. ",
             "availability": false
         },
         {
             "name": "Blues Clues Applique",
-            "size inches": "45 x 48",
-            "Washing instructions": "Machine washable, tumble dry.",
+            "sizeInches": "45 x 48",
+            "washingInstructions": "Machine washable, tumble dry.",
             "price": 65,
             "imageURL": "https://https://BerryPatchWhimsy.github.io/valerieWebPage/images/whispering-pines.webp",
             "image2URL": "",
@@ -32,123 +32,54 @@
         },
         {
             "name": "Blues Clues",
-            "size inches": "47 x 47",
-            "Washing instructions": "Machine washable, tumble dry.",
+            "sizeInches": "47 x 47",
+            "washingInstructions": "Machine washable, tumble dry.",
+            "price": 65,
+            "imageURL": "https://https://BerryPatchWhimsy.github.io/valerieWebPage/images/whispering-pines.webp",
+            "image2URL": "",
+            "description": "Lovingly made of flannel squares of light blue, dark blue, and a Blues Clues character pattern. The back of the quilt is made entirely of the Blues Clues character material with yellow ribbon bow accents added. 2 1/2 inch ruffle border. Machine and hand sewn.",
+            "availability": true
+        },
+        {
+            "name": "Blues Clues Diamond",
+            "sizeInches": "47 x 47",
+            "washingInstructions": "Machine washable, tumble dry.",
             "price": 85,
             "imageURL": "https://https://BerryPatchWhimsy.github.io/valerieWebPage/images/whispering-pines.webp",
             "image2URL": "",
-            "description": "Beautifully made quilt of flannel squares of light blue, dark blue, and a Blues Clues character pattern. The back of the quilt is made entirely of the Blues Clues character material with yellow ribbon bow accents added. 2 1/2 inch ruffle border. Machine and hand sewn.",
+            "description": "Handmade quilt made of flannel squares of light blue, dark blue, and a Blues Clues character pattern. The back of the quilt is made entirely of the Blues Clues character material with yellow ribbon bow accents added. 2 1/2 inch ruffle border. Machine and hand sewn.",
             "availability": true
         },
         {
-            "name": "Bluebird Bungalow",
-            "squareFootage": 550,
-            "numberOfBeds": 1,
-            "price": 335,
-            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/bluebird-bungalow.jpeg",
-            "imageArtistInfo": "https://www.pexels.com/photo/brown-house-1795508/",
-            "description": "A Scandinavian-inspired modern treehouse perched in the hills, complete with heated floors, minimalist décor, and stunning morning light.",
+            "name": "Christmas Butterfly",
+            "sizeInches": "48 x 44",
+            "washingInstructions": "Machine washable, tumble dry.",
+            "price": 55,
+            "imageURL": "https://https://BerryPatchWhimsy.github.io/valerieWebPage/images/whispering-pines.webp",
+            "image2URL": "",
+            "description": "Beautiful quilt lovingly made of colorful cotton and flannel squares of red, green, and butterfly material. The back of the quilt is made entirely of red flannel detailed with white ribbon bows. 2 inch ruffle border. Machine and hand sewn.",
             "availability": true
         },
         {
-            "name": "Blues Clues",
-            "squareFootage": 300,
-            "numberOfBeds": 1,
-            "price": 280,
-            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/nest-silver-creek.webp",
-            "imageArtistInfo": "https://www.pexels.com/photo/wooden-cottage-in-forest-18168868/",
-            "description": "Tucked in a secluded grove, this cozy nest features a queen bed loft, wood-fired stove, and forest canopy hammock views.",
+            "name": "Festive Red Butterfly",
+            "sizeInches": "48 x 44",
+            "washingInstructions": "Machine washable, tumble dry.",
+            "price": 55,
+            "imageURL": "https://https://BerryPatchWhimsy.github.io/valerieWebPage/images/whispering-pines.webp",
+            "image2URL": "",
+            "description": "Beautiful quilt made of colorful butterfly cottonand red flannel squares. The back of the quilt is made entirely of red flannel with a patchwork center-detailed with blue ribbon bows with white flowers and white lace. 2 inch ruffle border. Machine and hand sewn.",
             "availability": true
         },
         {
-            "name": "TimberGlow Loft",
-            "squareFootage": 600,
-            "numberOfBeds": 2,
-            "price": 390,
-            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/timberGlow-loft.webp",
-            "imageArtistInfo": "https://www.pexels.com/photo/house-under-trees-18323761/",
-            "description": "A rustic-luxury loft with vaulted ceilings, floor-to-ceiling windows, and a glass-enclosed rainfall shower suspended in the treetops.",
+            "name": "Pretty Pink",
+            "sizeInches": "44 x 44",
+            "washingInstructions": "Machine washable, tumble dry.",
+            "price": 45,
+            "imageURL": "https://https://BerryPatchWhimsy.github.io/valerieWebPage/images/whispering-pines.webp",
+            "image2URL": "",
+            "description": "Precious quilt made of colorful pink flower cotton with lace, ribbon, and rose accents added. The back of the quilt is made of cotton squares of light pink and colorful pink flowers. 2 inch ruffle border. Machine and hand sewn.",
             "availability": true
-        },
-        {
-            "name": "Hummingbird Haven",
-            "squareFootage": 450,
-            "numberOfBeds": 1,
-            "price": 295,
-            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/humming-bird-haven.webp",
-            "imageArtistInfo": "https://www.pexels.com/photo/tree-house-3018035/",
-            "description": "Surrounded by flowering trees and birdsong, this light-filled retreat offers a swinging daybed, bamboo accents, and a forest spa tub.",
-            "availability": true
-        },
-        {
-            "name": "Aurora Branch House",
-            "squareFootage": 800,
-            "numberOfBeds": 2,
-            "price": 465,
-            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/aurora-branch-house.webp",
-            "imageArtistInfo": "https://www.pexels.com/photo/aerial-adventure-park-in-forest-in-snow-19296596/",
-            "description": "Perfect for northern lights viewing, this Arctic-inspired treehouse boasts heated glass panels, Nordic furnishings, and a wood sauna.",
-            "availability": false
-        },
-        {
-            "name": "Willow Lantern Hideout",
-            "squareFootage": 520,
-            "numberOfBeds": 2,
-            "price": 350,
-            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/willow-lantern-hideout.webp",
-            "imageArtistInfo": "https://www.pexels.com/photo/wooden-house-with-glass-panels-with-wooden-staircase-under-a-green-tree-8755443/",
-            "description": "An enchanting escape illuminated by lantern light, this cozy perch features handcrafted willow furniture and a spiral staircase.",
-            "availability": true
-        },
-        {
-            "name": "Foxglove Perch",
-            "squareFootage": 375,
-            "numberOfBeds": 1,
-            "price": 305,
-            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/foxglove-perch.webp",
-            "imageArtistInfo": "Reidner",
-            "description": "Hidden among blooming foxglove and mossy trunks, this snug cabin includes a stone fireplace, built-in bookshelves, and a skylight above the bath.",
-            "availability": true
-        },
-        {
-            "name": "The Lantern Lookout",
-            "squareFootage": 480,
-            "numberOfBeds": 1,
-            "price": 325,
-            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/lantern-lookout.webp",
-            "imageArtistInfo": "https://www.pexels.com/photo/small-tree-house-with-narrow-footpath-in-forest-6272212/",
-            "description": "Overlooking a peaceful lake, this compact luxury rental includes a full kitchenette, outdoor fire bowl, and swinging rope bridge access.",
-            "availability": true
-        },
-        {
-            "name": "Cedar Spiral Cabin",
-            "squareFootage": 620,
-            "numberOfBeds": 2,
-            "price": 400,
-            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/cedar-spiral-cabin.webp",
-            "imageArtistInfo": "https://www.pexels.com/photo/1668880/",
-            "description": "This artistic treehouse features a cedar spiral staircase, rain-harvest shower, and a wraparound porch with sunset views.",
-            "availability": false
-        },
-        {
-            "name": "Luna Loft",
-            "squareFootage": 360,
-            "numberOfBeds": 1,
-            "price": 290,
-            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/luna-loft.webp",
-            "imageArtistInfo": "stockcake",
-            "description": "Designed for solo travelers or couples, Luna Loft offers a moonlit deck, indoor hammock nook, and built-in aromatherapy diffuser.",
-            "availability": true
-        },
-        {
-            "name": "The Driftwood Roost",
-            "squareFootage": 580,
-            "numberOfBeds": 2,
-            "price": 370,
-            "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/driftwood-roost.webp",
-            "imageArtistInfo": "d_alexander33",
-            "description": "Blending coastal charm with treetop serenity, this hideaway features salvaged driftwood décor, ocean breezes, and a wine bar nook.",
-            "availability": false
         }
+        
     ]
 }

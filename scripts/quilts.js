@@ -78,7 +78,7 @@ const displayQuilts = (quilts) => {
         <h2>${quilt.name}</h2>
         <ul>
           <li><strong>Price:</strong> $${quilt.price} / night</li>
-          <li><strong>Size:</strong> ${quilt["size inches"]}</li>
+          <li><strong>Size:</strong> ${quilt.sizeInches}</li>
           <li><strong>Availability:</strong> ${available.textContent}</li>
         </ul>
       `;
@@ -100,11 +100,11 @@ const displayQuilts = (quilts) => {
                 <h3>${quilt.name}</h3>
                 <ul>
                     <li><strong>Price:</strong> $${quilt.price} / night</li>
-                    <li><strong>Size:</strong> ${quilt["size inches"]}</li>
-                    <li><strong>Washing Instructions:</strong> ${quilt["Washing instructions"]}</li>
+                    <li><strong>Size:</strong> ${quilt.sizeInches}</li>
+                    <li><strong>Washing Instructions:</strong> ${quilt.washingInstructions}</li>
                     <li><strong>Descriptions:</strong> ${quilt.description}</li>
                 </ul>
-                <a href="${quilt.imageArtistInfo}" target="_blank">Photo Credit</a>
+                <a href="${quilt.image2URL}" target="_blank">more images</a>
                 <button class="close-button">ⓧ</button>
             `;
         container.appendChild(dialog);
