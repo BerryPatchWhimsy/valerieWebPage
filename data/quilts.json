@@ -1,13 +1,12 @@
 {
     "quilts": [
         {
-            "name": "The Whispering Pines",
-            "squareFootage": 750,
-            "numberOfBeds": 2,
-            "price": 450,
+            "name": "Bears and Bubbles",
+            "size inches": "52 x 46",
+            "Washing instructions": "Machine washable, tumble dry.",
+            "price": 65,
             "imageURL": "https://berrypatchwhimsy.github.io/wdd231/project/images/whispering-pines.webp",
-            "imageArtistInfo": "https://www.pexels.com/photo/brown-wooden-treehouse-2380249/",
-            "description": "Nestled among towering pines, this elevated sanctuary features panoramic forest views, a private hot tub, and artisan-crafted interiors that blend luxury and nature seamlessly.",
+            "description": "Beautifully made quilt with squares of blue cotton, white yellow flannel, and cotton squares with bears playing with bubbles. The back of the quilt is similar colors detailed with ribbon accents and lace. 2 inch ruffle border. Machine and hand sewn. ",
             "availability": true
         },
         {
