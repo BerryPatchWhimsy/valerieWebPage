@@ -35,6 +35,7 @@ body {
     grid-template-columns: 1fr;
     font-family: var(--body-font-family);
     max-width: 320px;
+    background-color: var(--body-color);
 }
 
 h1 {
@@ -180,7 +181,7 @@ footer {
 }
 
 .info,
-.social{
+.social {
     font-size: 6vw;
     font-weight: bold;
 }
@@ -191,7 +192,8 @@ footer {
 }
 
 .company {
-    font-size: 7vw;
+    font-size: 13vw;
+    font-family: var(--heading-fancy-font);
 }
 
 .email a {
@@ -213,7 +215,7 @@ footer {
 }
 
 /*--------- body ---------*/
-#rentalsContainer {
+#rquiltsContainer {
     margin: 1rem 0;
     text-align: center;
     border: none;
@@ -225,7 +227,7 @@ footer {
 
 }
 
-.treehouse-card,
+.quilt-card,
 .grid div,
 .list div {
     border: 2px solid var(--background-color);
@@ -237,18 +239,18 @@ footer {
 
 }
 
-.treehouse-card img {
+.quilt-card img {
     max-width: 100%;
     height: auto;
     /* border-radius: 5px; */
 }
 
-.treehouse-card li {
+.quilt-card li {
     list-style: none;
     text-align: left;
 }
 
-.treehouse-card h2 {
+.quilt-card h2 {
     margin: 0;
     background-color: var(--secondary-color);
 
@@ -260,7 +262,7 @@ footer {
     font-weight: bold;
 }
 
-.treehouse-card button {
+.quilt-card button {
     font-size: 5vw;
     margin: 1rem .5rem;
     background-color: var(--primary-color);
@@ -295,11 +297,11 @@ dialog ul {
     padding-left: 1rem;
 }
 
-.treehouse-dialog a {
+.quilt-dialog a {
     margin: 1rem;
 }
 
-.treehouse-dialog li {
+.quilt-dialog li {
     color: var(--text-color);
     text-align: left;
     padding: 1rem .5rem 0;
@@ -392,12 +394,11 @@ dialog ul {
 
     .navigation {
         flex-direction: row;
-        justify-content: space-between;
-        padding: .5rem;
+        justify-content: space-evenly;
     }
 
     .navigation a {
-        font-weight: bolder;
+
         font-size: 6vw;
         padding: .5rem;
     }
@@ -411,7 +412,7 @@ dialog ul {
     }
 
     .active::before {
-        content: "✦ Home";
+        /* content: "✦ Baby"; */
         text-decoration: none;
     }
 
@@ -450,6 +451,7 @@ dialog ul {
     }
 
     .container {
+        display: flex;
         flex-direction: row;
         justify-content: left;
         font-size: 2.5rem;
@@ -458,10 +460,18 @@ dialog ul {
     .logo {
         max-width: 100px;
         height: auto;
+        margin-right: 1rem;
+        margin-left: .5rem;
+        margin-top: .25rem;
     }
 
     #name {
-        font-size: 3rem;
+        font-size: 4.25rem;
+    }
+
+    h1 {
+        /* font-size: 3rem; */
+        padding-left: 1rem;
     }
 
 
@@ -489,9 +499,10 @@ dialog ul {
 
     }
 
-    .leafyTreetopsLLC {
+    .company {
         font-style: italic;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
+        font-weight: bold;
     }
 
     .copywrite,
@@ -541,7 +552,7 @@ dialog ul {
         font-size: 2.5vw;
     }
 
-    .treehouse-card button {
+    .quilt-card button {
         width: 120px;
         font-size: 1rem;
         padding: 8px 16px;
