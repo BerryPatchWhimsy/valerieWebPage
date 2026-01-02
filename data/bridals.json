@@ -1,0 +1,84 @@
+{
+    "bridals": [
+        {
+            "name": "Red and Gold Boutonniere",
+            "type": "boutonniere",
+            "sizeInches": "4 x 2",
+            "price": 0,
+            "imageURL": "https://https://berrypatchwhimsy.github.io/valerieWebPage/images/whispering-pines.webp",
+            "image2URL": "",
+            "description": "Made with silk roses and gold ribbon accents.",
+            "availability": false
+        },
+        {
+            "name": "Blue and White Puppies",
+            "sizeInches": "50 x 47",
+            "washingInstructions": "Machine washable, tumble dry.",
+            "price": 45,
+            "imageURL": "https://https://berrypatchwhimsy.github.io/valerieWebPage/images/whispering-pines.webp",
+            "image2URL": "",
+            "description": "Lovingly made with squares of baby blue cotton, white and blue puppies. The back of the quilt is similar colors. 2 inch ruffle border. Machine and hand sewn. ",
+            "availability": false
+        },
+        {
+            "name": "Blues Clues Applique",
+            "sizeInches": "45 x 48",
+            "washingInstructions": "Machine washable, tumble dry.",
+            "price": 65,
+            "imageURL": "https://https://berrypatchwhimsy.github.io/valerieWebPage/images/whispering-pines.webp",
+            "image2URL": "",
+            "description": "Beautifully made quilt of cotton and flannel squares of light blue, lavender, and a Blues Clues character pattern. The back of the quilt is mostly light blue with 3 assorted applique designs: a heart with daisy, two roses with a heart, and a large rose. Bows can be added upon request at no additional cost. 2 1/2 inch ruffle border.Machine and hand sewn.",
+            "availability": true
+        },
+        {
+            "name": "Blues Clues",
+            "sizeInches": "47 x 47",
+            "washingInstructions": "Machine washable, tumble dry.",
+            "price": 65,
+            "imageURL": "https://https://berrypatchwhimsy.github.io/valerieWebPage/images/whispering-pines.webp",
+            "image2URL": "",
+            "description": "Lovingly made of flannel squares of light blue, dark blue, and a Blues Clues character pattern. The back of the quilt is made entirely of the Blues Clues character material with yellow ribbon bow accents added. 2 1/2 inch ruffle border. Machine and hand sewn.",
+            "availability": true
+        },
+        {
+            "name": "Blues Clues Diamond",
+            "sizeInches": "47 x 47",
+            "washingInstructions": "Machine washable, tumble dry.",
+            "price": 85,
+            "imageURL": "https://https://berrypatchwhimsy.github.io/valerieWebPage/images/whispering-pines.webp",
+            "image2URL": "",
+            "description": "Handmade quilt made of flannel squares of light blue, dark blue, and a Blues Clues character pattern. The back of the quilt is made entirely of the Blues Clues character material with yellow ribbon bow accents added. 2 1/2 inch ruffle border. Machine and hand sewn.",
+            "availability": true
+        },
+        {
+            "name": "Christmas Butterfly",
+            "sizeInches": "48 x 44",
+            "washingInstructions": "Machine washable, tumble dry.",
+            "price": 55,
+            "imageURL": "https://https://berrypatchwhimsy.github.io/valerieWebPage/images/whispering-pines.webp",
+            "image2URL": "",
+            "description": "Beautiful quilt lovingly made of colorful cotton and flannel squares of red, green, and butterfly material. The back of the quilt is made entirely of red flannel detailed with white ribbon bows. 2 inch ruffle border. Machine and hand sewn.",
+            "availability": true
+        },
+        {
+            "name": "Festive Red Butterfly",
+            "sizeInches": "48 x 44",
+            "washingInstructions": "Machine washable, tumble dry.",
+            "price": 55,
+            "imageURL": "https://https://berrypatchwhimsy.github.io/valerieWebPage/images/whispering-pines.webp",
+            "image2URL": "",
+            "description": "Beautiful quilt made of colorful butterfly cottonand red flannel squares. The back of the quilt is made entirely of red flannel with a patchwork center-detailed with blue ribbon bows with white flowers and white lace. 2 inch ruffle border. Machine and hand sewn.",
+            "availability": true
+        },
+        {
+            "name": "Pretty Pink",
+            "sizeInches": "44 x 44",
+            "washingInstructions": "Machine washable, tumble dry.",
+            "price": 45,
+            "imageURL": "https://https://berrypatchwhimsy.github.io/valerieWebPage/images/whispering-pines.webp",
+            "image2URL": "",
+            "description": "Precious quilt made of colorful pink flower cotton with lace, ribbon, and rose accents added. The back of the quilt is made of cotton squares of light pink and colorful pink flowers. 2 inch ruffle border. Machine and hand sewn.",
+            "availability": true
+        }
+    ]
+}

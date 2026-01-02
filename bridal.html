@@ -4,35 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/vb-logo.webp">
-    <title>Valeria's Boutique Home Page</title>
-    <meta name="description" content="Valeria's Boutique Home Page | valeriasboutique.com">
+    <link rel="icon" href="images/val-logo-3.svg">
+    <title>Valeria's Boutique Baby Products Page</title>
+    <meta name="description" content="Valeria's Boutique Bridal Products Page | valeriasboutique.com">
     <meta name="author" content="Anissa Pooley">
-    <meta property="og:title" content="Valeria's Boutique: Bridal Veils and Baby Quilts">
-    <meta property="og:description" content="Beautiful Bridal Veils and Baby Quilts Handcrafted with Love">
-    <meta property="og:image" content="https://BerryPatchWhimsy.github.io/valerieWebPage/images/v-b-logo.svg">
-    <meta property="og:url" content="https://BerryPatchWhimsy.github.io/valerieWebPage/index.html">
+    <meta property="og:title" content="Valeria's Boutique: Bridal Products">
+    <meta property="og:description" content="Bridal Veils and Accessories Handcrafted with Love">
+    <meta property="og:image" content="https://BerryPatchWhimsy.github.io/valerieWebPage/images/val-logo-3.svg">
+    <meta property="og:url" content="https://BerryPatchWhimsy.github.io/valerieWebPage/baby.html">
 
-    <script src="scripts/index.js" type="module"></script>
-    <script src="scripts/get-random-reviews.mjs" type="module"></script>
+    <script src="scripts/quilts.js" type="module"></script>
+    <!-- <script src="scripts/get-random-reviews.mjs" type="module"></script> -->
     <!-- <script src="scripts/weather.js" defer></script> -->
     <!-- <script src="scripts/spotlight.js" defer></script> -->
 
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Original+Surfer&display=swap"
-        rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&family=Galada&family=Gwendolyn:wght@400;700&family=Meie+Script&family=Parisienne&family=Radley:ital@0;1&family=Tangerine:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Updock&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/index-med.css" media="(min-width: 320px)">
-    <link rel="stylesheet" href="styles/index-large.css" media="(min-width: 600px)">
-    <link rel="stylesheet" href="styles/index-xlarge.css" media="(min-width: 900px)">
+    <link rel="stylesheet" href="styles/baby1.css">
+    <!-- <link rel="stylesheet" href="styles/baby-med.css" media="(min-width: 320px)">
+    <link rel="stylesheet" href="styles/baby-large.css" media="(min-width: 600px)">
+    <link rel="stylesheet" href="styles/baby-xlarge.css" media="(min-width: 900px)"> -->
 </head>
 
 <body>
@@ -41,24 +36,24 @@
             <picture class="logo">
                 <!-- <source srcset="images/logo-pic-small.webp" media="(max-width: 320px)"> -->
                 <!-- <source srcset="images/logo-pic.webp" media="(max-width: 1200px)"> -->
-                <img src="images/vb-logo.webp" alt="Valeria's Boutique Logo" width="350" height="350">
+                <img src="images/val-logo-3.svg" alt="Valeria's Boutique Logo" width="350" height="350">
             </picture>
             <div>
                 <span id="name"></span>
                 <p>Bridal and Baby</p>
             </div>
             <button id="menu" title="Hamburger Menu"></button>
-
         </div>
     </header>
     <main>
-        <h1>Rentals Page</h1>
+        <h1>Baby Products</h1>
         <nav id="animateMe">
             <ul class="navigation">
                 <li><a href="index.html" title="Home">Home</a></li>
-                <li><a href="rentals.html" title="Rentals" class="active"></a></li>
+                <li><a href="baby.html" title="Baby" class="active"></a></li>
+                <li><a href="bridal.html" title="Bridal">Bridal</a></li>
                 <li><a href="contact-us.html" title="Contact">Contact Us</a></li>
-    
+
             </ul>
         </nav>
         <div class="cardMenu">
@@ -66,37 +61,36 @@
             <button id="list">☰ List</button>
         </div>
         <!-- <nav class="rentalsNav">
-                <ul>
-                    <li><a href="#" id="1" class="active">All Rentals</a></li>
-                    <li><a href="#" id="treehouses">Treehouses</a></li>
-                    <li><a href="#" id="handicap">Handicap Accessible</a></li>
-                    <li><a href="#" id="glamping">Glamping</a></li>
-                </ul>
-            </nav> -->
-        <div id="rentalsContainer"></div>
-    
+            <ul>
+                <li><a href="#" id="1" class="active">All Rentals</a></li>
+                <li><a href="#" id="treehouses">Treehouses</a></li>
+                <li><a href="#" id="handicap">Handicap Accessible</a></li>
+                <li><a href="#" id="glamping">Glamping</a></li>
+            </ul>
+        </nav> -->
+        <div id="quiltsContainer"></div>
+
     </main>
     <footer>
         <div class="info">
             <p class="company">Valeria's Boutique</p>
             <!-- <p>Address</p> -->
             <!-- <p>Phone Number</p> -->
-            <p class="email"><a href="mailto:info@email.com">info@email.com</a>
+            <p class="email"><a href="sales@babyvals.com">sales@babyvals.com</a>
         </div>
         <div class="social">
             <nav class="socialLinks">
                 <a href="https://www.facebook.com/baby.val.s.2025"><img src="images/facebook-logo.png" alt="Facebook"
                         loading="lazy"></a>
                 <!-- <a href="https://www.twitter.com/LeafyTreetops"><img src="images/twitter-x-logo.png" alt="Twitter X"
-                        loading="lazy"></a> -->
+                            loading="lazy"></a> -->
                 <!-- <a href="https://www.linkedin.com/company/LeafyTreetops"><img src="images/linked-in-logo.png"
-                        alt="LinkedIn" loading="lazy"></a> -->
+                            alt="LinkedIn" loading="lazy"></a> -->
             </nav>
         </div>
         <div class="copywrite">
-            <!-- <p>WDD 231 - Class Project</p> -->
-            <p>BerryPatchWhimsy</p>
             <p> &copy; <span id="currentyear"></span>Valeria's Boutique</p>
+            <p>Created by BerryPatchWhimsy</p>
             <p id="lastModified"></p>
         </div>
     </footer>

@@ -8,31 +8,30 @@ updateLastModified();
 
 const button = document.querySelector("#menu");
 const navigation = document.querySelector("#animateMe");
-const container = document.querySelector("#quiltsContainer");
+const container = document.querySelector("#bridalsContainer");
 
 button.addEventListener("click", () => {
     navigation.classList.toggle("open");
     button.classList.toggle("open");
 });
 
-const quiltsList = "https://berrypatchwhimsy.github.io/valerieWebPage/data/quilts.json";
-async function getQuiltsData() {
+const bridalsList = "https://berrypatchwhimsy.github.io/valerieWebPage/data/bridals.json";
+async function getBridalsData() {
     try {
-        const response = await fetch(quiltsList);
+        const response = await fetch(bridalsList);
         if (!response.ok) {
             throw new Error(`Fetch error: ${response.status} ${response.statusText}`);
         }
         const data = await response.json();
-        displayQuilts(data.quilts); // Adjust this function as needed for your data structure
+        displayBridals(data.bridals); // Adjust this function as needed for your data structure
     } catch (error) {
-        console.error("Error loading quilt data:", error);
+        console.error("Error loading bridal data:", error);
         // Optional: display a message in the UI
-        document.querySelector("#quiltsContainer").innerHTML = "<p>Unable to load quilt information at this time.</p>";
+        document.querySelector("#bridalsContainer").innerHTML = "<p>Unable to load bridal item information at this time.</p>";
     }
 }
 
-getQuiltsData();
-
+getBridalsData();
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 
@@ -52,15 +51,15 @@ function showlist() {
 
 
 
-const displayQuilts = (quilts) => {
+const displayBridals = (bridals) => {
 
-    quilts.forEach(quilt => {
+    bridals.forEach(bridal => {
 
         const card = document.createElement("div");
-        card.className = "quilt-card";
+        card.className = "bridal-card";
 
         const getAvailability = () => {
-            const availability = quilt.availability;
+            const availability = bridal.availability;
             if (availability == true) {
                 return `Available`;
             } else {
@@ -74,11 +73,11 @@ const displayQuilts = (quilts) => {
 
 
         card.innerHTML = `
-        <img src="${quilt.imageURL}" alt="${quilt.name}" loading="lazy" width="400" height="300">
-        <h2>${quilt.name}</h2>
+        <img src="${bridal.imageURL}" alt="${bridal.name}" loading="lazy" width="400" height="300">
+        <h2>${bridal.name}</h2>
         <ul>
-          <li><strong>Price:</strong> $${quilt.price}</li>
-          <li><strong>Size:</strong> ${quilt.sizeInches}</li>
+          <li><strong>Price:</strong> $${bridal.price}</li>
+          <li><strong>Size:</strong> ${bridal.sizeInches}</li>
           <li><strong>Availability:</strong> ${available.textContent}</li>
         </ul>
       `;
@@ -86,7 +85,7 @@ const displayQuilts = (quilts) => {
 
 
         let info = document.createElement("button");
-        info.classList.add("quiltInfo");
+        info.classList.add("bridalInfo");
         info.textContent = "Learn more";
         card.appendChild(info);
 
@@ -94,17 +93,16 @@ const displayQuilts = (quilts) => {
         container.appendChild(card);
 
         let dialog = document.createElement("dialog");
-        dialog.classList.add("quilt-dialog");
+        dialog.classList.add("bridal-dialog");
         // dialog.id.add = `${name}`;
         dialog.innerHTML = `
-                <h3>${quilt.name}</h3>
+                <h3>${bridal.name}</h3>
                 <ul>
-                    <li><strong>Price:</strong> $${quilt.price} / night</li>
-                    <li><strong>Size:</strong> ${quilt.sizeInches}</li>
-                    <li><strong>Washing Instructions:</strong> ${quilt.washingInstructions}</li>
-                    <li><strong>Descriptions:</strong> ${quilt.description}</li>
+                    <li><strong>Price:</strong> $${bridal.price} / night</li>
+                    <li><strong>Size:</strong> ${bridal.sizeInches}</li>
+                    <li><strong>Descriptions:</strong> ${bridal.description}</li>
                 </ul>
-                <a href="${quilt.image2URL}" target="_blank">more images</a>
+                <a href="${bridal.image2URL}" target="_blank">more images</a>
                 <button class="close-button">ⓧ</button>
             `;
         container.appendChild(dialog);
