@@ -66,16 +66,16 @@
         font-size: 2rem;
     }
 
-    .description {
+    .description, .productType h4 {
         font-size: 2rem;
         padding: 1rem 3rem;
     }
 
-    .customerReviews h3 {
+    .customerReviews h3, .aboutProducts h3 {
         font-size: 2.5rem;
     }
 
-    .review-card {
+    .review-card, .productType p {
         font-size: 1.5rem;
         padding: 1rem 3rem;
         margin-top: 0;
