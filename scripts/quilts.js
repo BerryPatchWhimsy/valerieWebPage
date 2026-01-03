@@ -80,6 +80,7 @@ const displayQuilts = (quilts) => {
           <li><strong>Price:</strong> $${quilt.price}</li>
           <li><strong>Size:</strong> ${quilt.sizeInches}</li>
           <li><strong>Availability:</strong> ${available.textContent}</li>
+          <li><strong><button onclick="addToCart('${quilt.name}', ${quilt.price})">Add to Cart</button></li>
         </ul>
       `;
 
