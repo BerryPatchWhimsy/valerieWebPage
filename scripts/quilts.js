@@ -74,7 +74,7 @@ const displayQuilts = (quilts) => {
 
 
         card.innerHTML = `
-        <img src="${quilt.imageURL}" alt="${quilt.name}" loading="lazy" width="400" height="300">
+        <img src="${quilt.imageURL}" alt="${quilt.name}" loading="lazy" width="400" height="400">
         <h2>${quilt.name}</h2>
         <ul>
           <li><strong>Price:</strong> $${quilt.price}</li>

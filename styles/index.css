@@ -205,7 +205,7 @@ footer {
 }
 
 /*--------- body ---------*/
-.customerReviews,
+.customerReviews, .aboutProducts,
 .deals {
     margin: 1rem;
 }
@@ -299,11 +299,16 @@ main {
     border-radius: 5px;
 }
 
-.description p {
-    margin-bottom: 2rem;
+.description p, .aboutProducts p {
+    margin: 1rem;
 }
 
-.customerReviews,
+.aboutProducts p {
+    font-size: 6vw;
+    text-align: left;
+}
+
+.customerReviews, .aboutProducts,
 .deals {
 
     border: 2pt solid var(--background-color);
@@ -311,7 +316,7 @@ main {
     padding: 0;
 }
 
-.customerReviews h3,
+.customerReviews h3, .aboutProducts h3,
 .deals h3 {
     font-size: 7vw;
     text-align: center;
@@ -320,13 +325,18 @@ main {
     color: var(--text-color);
 }
 
+.productType h4 {
+    margin: .5rem;
+    font-size: 7vw;
+}
+
 
 .review-card,
 .currentDealCard,
 .upcomingDealCard,
 .current,
-#town,
-.days,
+/* #town,
+.days, */
 #reviews,
 .dealsInfo {
     font-size: 6vw;
