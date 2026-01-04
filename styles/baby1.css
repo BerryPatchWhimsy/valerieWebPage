@@ -236,24 +236,31 @@ footer {
     box-shadow: 0 0 2px var(--text-color);
     color: var(--text-color);
     align-items: center;
+    background-color: var(--accent-color);
 
 }
 
 .quilt-card img {
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
-    /* border-radius: 5px; */
+    margin: .25rem;
+    align-items: center;
+    border-radius: 5px;
+    
 }
 
 .quilt-card li {
     list-style: none;
     text-align: left;
+    color: var(--body-color);
 }
 
 .quilt-card h2 {
     margin: 0;
     background-color: var(--secondary-color);
-
+    color: var(--body-color);
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 

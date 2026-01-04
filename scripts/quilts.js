@@ -72,6 +72,7 @@ const displayQuilts = (quilts) => {
         available.classList.add("availability");
         available.textContent = getAvailability();
 
+        
 
         card.innerHTML = `
         <img src="${quilt.imageURL}" alt="${quilt.name}" loading="lazy" width="400" height="400">
