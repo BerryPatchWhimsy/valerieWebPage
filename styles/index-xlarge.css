@@ -34,7 +34,7 @@
     }
 
     #reviews,
-    .dealsInfo {
+    .dealsInfo, .productsInfo {
         display: flex;
         flex-direction: row;
         margin: 1rem;
