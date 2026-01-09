@@ -72,7 +72,7 @@ const displayQuilts = (quilts) => {
         available.classList.add("availability");
         available.textContent = getAvailability();
 
-        
+
 
         card.innerHTML = `
         <img src="${quilt.imageURL}" alt="${quilt.name}" loading="lazy" width="400" height="400">
@@ -99,14 +99,17 @@ const displayQuilts = (quilts) => {
         dialog.classList.add("quilt-dialog");
         // dialog.id.add = `${name}`;
         dialog.innerHTML = `
+                <a href="${quilt.imageURL}"><img src="${quilt.imageURL}" alt="${quilt.name}" loading="lazy" width="100" height="100"></a>
+                <a href="${quilt.image2URL}"><img src="${quilt.image2URL}" alt="${quilt.name}" loading="lazy" width="100" height="100"></a>
+                <a href="${quilt.image3URL}"><img src="${quilt.image3URL}" alt="${quilt.name}" loading="lazy" width="100" height="100"></a>
+                <a href="${quilt.image4URL}"><img src="${quilt.image4URL}" alt="${quilt.name}" loading="lazy" width="100" height="100"></a>
                 <h3>${quilt.name}</h3>
                 <ul>
-                    <li><strong>Price:</strong> $${quilt.price} / night</li>
-                    <li><strong>Size:</strong> ${quilt.sizeInches}</li>
+                    <li><strong>Price:</strong> $${quilt.price}</li>
+                    <li><strong>Size:</strong> ${quilt.sizeInches} (inches)</li>
                     <li><strong>Washing Instructions:</strong> ${quilt.washingInstructions}</li>
                     <li><strong>Descriptions:</strong> ${quilt.description}</li>
                 </ul>
-                <a href="${quilt.image2URL}" target="_blank">more images</a>
                 <button class="close-button">ⓧ</button>
             `;
         container.appendChild(dialog);

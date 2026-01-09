@@ -16,8 +16,8 @@
             "sizeInches": "45 x 48",
             "washingInstructions": "Machine washable, tumble dry.",
             "price": 65,
-            "imageURL": "",
-            "image2URL": "",
+            "imageURL": "https://berrypatchwhimsy.github.io/valerieWebPage/images/blues-clues-applique-front.webp",
+            "image2URL": "https://berrypatchwhimsy.github.io/valerieWebPage/images/blues-clues-applique-back.webp",
             "description": "Beautifully made quilt of cotton and flannel squares of light blue, lavender, and a Blues Clues character pattern. The back of the quilt is mostly light blue with 3 assorted applique designs: a heart with daisy, two roses with a heart, and a large rose. Bows can be added upon request at no additional cost. 2 1/2 inch ruffle border.Machine and hand sewn.",
             "availability": true
         },
@@ -27,7 +27,7 @@
             "washingInstructions": "Machine washable, tumble dry.",
             "price": 65,
             "imageURL": "https://berrypatchwhimsy.github.io/valerieWebPage/images/blues-clues-front.webp",
-            "image2URL": "",
+            "image2URL": "https://berrypatchwhimsy.github.io/valerieWebPage/images/blues-clues-back.webp",
             "description": "Lovingly made of flannel squares of light blue, dark blue, and a Blues Clues character pattern. The back of the quilt is made entirely of the Blues Clues character material with yellow ribbon bow accents added. 2 1/2 inch ruffle border. Machine and hand sewn.",
             "availability": true
         },
@@ -36,8 +36,8 @@
             "sizeInches": "47 x 47",
             "washingInstructions": "Machine washable, tumble dry.",
             "price": 85,
-            "imageURL": "",
-            "image2URL": "",
+            "imageURL": "https://berrypatchwhimsy.github.io/valerieWebPage/images/blues-clues-diamond-front.webp",
+            "image2URL": "https://berrypatchwhimsy.github.io/valerieWebPage/images/blues-clues-diamond-back.webp",
             "description": "Handmade quilt made of flannel squares of light blue, dark blue, and a Blues Clues character pattern. The back of the quilt is made entirely of the Blues Clues character material with yellow ribbon bow accents added. 2 1/2 inch ruffle border. Machine and hand sewn.",
             "availability": true
         },
@@ -73,6 +73,5 @@
             "description": "Precious quilt made of colorful pink flower cotton with lace, ribbon, and rose accents added. The back of the quilt is made of cotton squares of light pink and colorful pink flowers. 2 inch ruffle border. Machine and hand sewn.",
             "availability": true
         }
-        
     ]
 }
