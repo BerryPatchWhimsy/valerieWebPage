@@ -35,7 +35,8 @@ h2 {
     color: var(--text-color);
 }
 
-h3, h4 {
+h3,
+h4 {
     font-family: var(--heading-font-family);
     color: var(--text-color);
 }
@@ -127,7 +128,8 @@ footer {
 
 }
 
-.navigation a:hover, .active:hover::before {
+.navigation a:hover,
+.active:hover::before {
     color: var(--primary-color);
     font-weight: bolder;
     border-radius: 3px;
@@ -252,7 +254,8 @@ footer {
     text-decoration: underline;
 }
 
-.website p:hover, .officeaddress p:hover {
+.website p:hover,
+.officeaddress p:hover {
     color: blue;
 }
 
@@ -468,14 +471,14 @@ footer {
         grid-template-rows: 1fr;
     }
 
-        .active::before {
-            /* content: "✦ Contact Us"; */
-            text-decoration: none;
-        }
-    
-        #name {
-            font-size: 10vw;
-        }
+    .active::before {
+        /* content: "✦ Contact Us"; */
+        text-decoration: none;
+    }
+
+    #name {
+        font-size: 10vw;
+    }
 
 
 
@@ -559,7 +562,7 @@ footer {
 
     }
 
-    .mapInfo div{
+    .mapInfo div {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -567,7 +570,7 @@ footer {
     }
 
 
-    
+
 
     /* .form {
         display: grid;
