@@ -87,7 +87,7 @@ footer {
     margin-right: 1rem;
     margin-left: .5rem;
     margin-top: .25rem;
-    background-color: white;
+    background-color: var(--body-color);
     align-content: center;
     border-radius: 5px;
 }
@@ -405,7 +405,6 @@ dialog ul {
     }
 
     .navigation a {
-
         font-size: 6vw;
         padding: .5rem;
     }

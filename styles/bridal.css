@@ -1,32 +1,28 @@
-:root {
-    /* --primary-color: rgb(43, 25, 61);
-    --secondary-color: rgb(197, 151, 157);
-    --background-color: rgb(72, 77, 109);
-    --accent-color: rgb(75, 143, 140);*/
-
-    /* --primary-color: rgb(176, 158, 153); */
-    --secondary-color: rgb(254, 233, 225);
-    --background-color: rgb(236, 205, 195);
-    --primary-color: rgb(236, 205, 195);
-    /* --accent-color: rgb(100, 182, 140); */
-    --accent-color: rgb(98, 190, 193);
-
-    /* --primary-color: rgb(98, 190, 193);
-    --secondary-color: rgb(219, 186, 221);
-    --background-color: rgb(33, 1, 36);
-    --accent-color: rgb(117, 13, 55);  */
-
-    /* --primary-color: rgb(254,233,225);
-    --secondary-color: rgb(254, 233, 225);
-    --background-color: rgb(153, 114, 130);
-    --accent-color: rgb(98, 149, 150); */
+/* :root {
+    --primary-color: rgb(35, 61, 77);
+    --secondary-color: rgb(161, 193, 129);
+    --background-color: rgb(49, 94, 67);
+    --accent-color: rgb(252, 202, 70);
 
     --text-color: black;
 
-    /* --body-font-family: "Cormorant Infant", serif;
-    --heading-font-family: "Original Surfer", sans serif; */
     --body-font-family: "Cormorant Infant", serif;
-    --heading-font-family: "Galada", italic;
+    --heading-font-family: "Original Surfer", sans serif;
+} */
+
+:root {
+    --primary-color: rgb(255, 249, 240);
+    --accent-color: rgb(116, 140, 171);
+    --background-color: rgb(90, 113, 106);
+    --body-color: rgb(255, 249, 240);
+
+    --text-color: rgb(46, 33, 53);
+    --text-2ndary-color: rgb(63, 48, 71);
+
+    --body-font-family: "Kantumruy Pro", sans serif, 100;
+    --heading-fancy-font: "Updock", italic;
+    /*script typ font*/
+    --heading-font-family: "Charm", italic;
 }
 
 * {
@@ -39,12 +35,23 @@ body {
     grid-template-columns: 1fr;
     font-family: var(--body-font-family);
     max-width: 320px;
-
+    background-color: var(--body-color);
 }
 
-h1,
-h2,
-h3 {
+h1 {
+    font-family: var(--body-font-family);
+    color: var(--text-2ndary-color);
+}
+
+
+h2 {
+    font-family: var(--heading-fancy-font);
+    color: var(--text-color);
+}
+
+
+h3,
+h4 {
     font-family: var(--heading-font-family);
     color: var(--text-color);
 }
@@ -60,18 +67,23 @@ footer {
 
 .container {
     display: flex;
-    font-size: 6.5vw;
-    color: var(--text-color);
-    font-weight: bold;
+    font-size: 8vw;
+    color: var(--primary-color);
 }
 
 .container div {
     padding-top: .5rem;
 }
 
+.container p {
+    padding-left: 1rem;
+    font-family: var(--heading-font-family);
+
+}
+
 .logo {
     max-width: 50px;
-    height: auto;
+    height: 50px;
     margin-right: 1rem;
     margin-left: .5rem;
     margin-top: .25rem;
@@ -87,9 +99,10 @@ footer {
 }
 
 #name {
-    font-family: var(--heading-font-family);
-    color: var(--text-color);
-    font-size: 8vw;
+    font-family: var(--heading-fancy-font);
+    color: var(--primary-color);
+    font-size: 12vw;
+    font-weight: bold;
 }
 
 #menu {
@@ -107,21 +120,21 @@ footer {
 }
 
 #menu.open::before {
-    content: "ⓧ";
-    color: white;
+    content: "ⅹ";
+    color: var(--primary-color);
 }
 
 .navigation {
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: var(--secondary-color);
-
+    background-color: var(--background-color);
+    padding: 0;
 }
 
 .navigation a {
     display: block;
-    color: var(--text-color);
+    color: var(--primary-color);
     padding: 3px;
     text-decoration: none;
     text-align: center;
@@ -131,9 +144,9 @@ footer {
 }
 
 .navigation a:hover,
-#reserve:hover {
+#reserve:hover,
+.active:hover::before {
     color: var(--primary-color);
-
     font-weight: bolder;
     border-radius: 3px;
     background-color: var(--accent-color);
@@ -154,7 +167,7 @@ footer {
 }
 
 .active::before {
-    content: "✦ Home";
+    content: "✦ Bridal";
     text-decoration: underline;
 
 }
@@ -168,14 +181,19 @@ footer {
 }
 
 .info,
-.social,
-.copywrite {
+.social {
     font-size: 6vw;
     font-weight: bold;
 }
 
+.copywrite {
+    font-size: 5vw;
+    font-weight: bold;
+}
+
 .company {
-    font-size: 7vw;
+    font-size: 13vw;
+    font-family: var(--heading-fancy-font);
 }
 
 .email a {
@@ -188,7 +206,7 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     margin: .5rem;
-    justify-content: space-evenly;
+    justify-content: left;
 }
 
 .socialLinks a img {
@@ -197,159 +215,367 @@ footer {
 }
 
 /*--------- body ---------*/
-.customerReviews,
-.weather,
-.deals {
+#bridalsContainer {
+    margin: 1rem 0;
+    text-align: center;
+    border: none;
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: center;
+
+}
+
+.bridal-card,
+.grid div,
+.list div {
+    border: 2px solid var(--background-color);
+    border-radius: 3px;
+    margin: 1rem;
+    box-shadow: 0 0 2px var(--text-color);
+    color: var(--text-color);
+    align-items: center;
+    background-color: var(--accent-color);
+
+}
+
+.bridal-card img {
+    max-width: 95%;
+    height: auto;
+    margin: .25rem;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.bridal-card li {
+    list-style: none;
+    text-align: left;
+    color: var(--body-color);
+}
+
+.bridal-card h2 {
+    margin: 0;
+    background-color: var(--secondary-color);
+    color: var(--body-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.availability {
+    color: red;
+    font-weight: bold;
+}
+
+.bridal-card button {
+    font-size: 5vw;
+    margin: 1rem .5rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--accent-color);
+    font-style: italic;
+    text-decoration: underline;
+    box-shadow: 0 0 5px var(--background-color);
+}
+
+dialog[open] {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    justify-self: center;
+    max-width: 60%;
+    top: 300px;
+}
+
+dialog h3 {
+    position: relative;
+    background-color: var(--background-color);
+    color: white;
+    padding: .5rem;
+    margin-top: .07rem;
+
+    font-size: 4vw;
+}
+
+dialog ul {
+    padding-left: 1rem;
+}
+
+.bridal-dialog a {
     margin: 1rem;
 }
 
-h1 {
-    padding-bottom: .25rem;
-    padding-left: .5rem;
-    text-align: center;
-    background-color: var(--secondary-color);
-}
-
-/*--------- hero ---------*/
-main {
-    background-color: white;
-}
-
-.hero {
-    background-color: white;
-    padding: .5rem;
-    border-radius: 0 0 5px 5px;
-
-}
-
-.hero img {
-
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    box-shadow: 0 2px 4px var(--primary-color);
-    border-radius: 5px;
-}
-
-
-
-.heroText {
-    position: relative;
-    margin: .5rem;
-    top: -63vw;
-    left: -.5rem;
-    height: auto;
-    background-color: var(--secondary-color);
-    border-radius: 0 5px 5px 0;
-    /* opacity: .85; */
-
-}
-
-.heroText h2 {
-    border: none;
+.bridal-dialog li {
     color: var(--text-color);
-    font-size: 7vw;
+    text-align: left;
+    padding: 1rem .5rem 0;
+    justify-self: left;
 }
 
-.heroText p {
+&::backdrop {
+    background-color: black 1;
+}
+
+.close-button {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    background: none;
+    border: none;
+}
+
+.cardMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#grid,
+#list {
+    margin: .75rem;
+}
+
+.list {
+    justify-items: center;
+    align-items: center;
+}
+
+.list div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    width: 100%;
+    border: 1px solid var(--primary-color);
+}
+
+.list div>* {
+    font-size: 5vw;
+}
+
+.list div h2 {
+    font-size: 6vw;
+    margin: 0;
+    padding: 1.25rem 0;
+
+}
+
+.list div ul {
+    padding: .25rem;
+}
+
+.list div img {
     display: none;
 }
 
-
-
-#reserve {
-    display: block;
-    position: relative;
-    top: -5vw;
-    left: 50vw;
-    background-color: var(--primary-color);
-    color: var(--accent-color);
-    font-size: 4.5vw;
-    font-weight: bold;
-    text-align: center;
-    padding: .25rem;
-    border-radius: 5px;
-    text-decoration: none;
-
-}
-
-
-
-/* reserve:hover same as nav:hover */
-
-/*--------- reviews and deals ---------*/
-
-.customerReviews,
-.deals {
-    background-color: var(--secondary-color);
-    border-radius: 5px;
-    padding: 0;
-}
-
-.customerReviews h2,
-.deals h2 {
-    font-size: 7vw;
-    text-align: center;
+.list div:nth-child(even) {
     background-color: var(--background-color);
-    border-radius: 5px;
-    padding: .5rem;
-    color: var(--text-color);
 }
 
 
-.review-card,
-.currentDealCard,
-.upcomingDealCard,
-.current,
-#town,
-.days,
-#reviews,
-.dealsInfo {
-    font-size: 6vw;
-    padding: .5rem;
+/* --------------------------------media medium---------------------------------------------- */
+@media screen and (min-width: 320px) {
+    body {
+        margin: 0 auto;
+        justify-content: center;
+        max-width: 100%;
+        /*prevent horizontal scroll*/
+        overflow-x: hidden;
+        /*prevent horizontal scroll*/
+    }
+
+    header {
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 90px;
+        max-height: 90px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .navigation a {
+
+        font-size: 6vw;
+        padding: .5rem;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    #animateMe {
+        grid-template-rows: 1fr;
+    }
+
+    .active::before {
+        /* content: "✦ Baby"; */
+        text-decoration: none;
+    }
+
+    #name {
+        font-size: 10vw;
+    }
+
+
+
+    /*-------------- body css --------------*/
+    h1 {
+        padding-left: 1rem;
+        font-size: 2rem;
+    }
+
+    /*-------------- footer css --------------*/
+    .socialLinks a img {
+        max-width: 40px;
+        height: auto;
+    }
+
+
 }
 
-.currentDealHeader,
-.upcomingDealHeader {
-    text-decoration: underline;
-    font-style: italic;
+/* --------------------------------media large-------------------------------------------------------------- */
+@media screen and (min-width: 600px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        padding: 1rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        max-width: 100px;
+        height: auto;
+        margin-right: 1rem;
+        margin-left: .5rem;
+        margin-top: .25rem;
+    }
+
+    #name {
+        font-size: 4.25rem;
+    }
+
+    h1 {
+        /* font-size: 3rem; */
+        padding-left: 1rem;
+    }
+
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .navigation a {
+        font-size: 2.25rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+    }
+
+
+
+    footer {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr auto 1fr;
+        padding: 1rem;
+
+    }
+
+    .company {
+        font-style: italic;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .copywrite,
+    .info {
+        text-align: center;
+        font-size: 3vw;
+        font-weight: normal;
+    }
+
+    /* div.copywrite,
+    div.info {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: normal;
+    } */
+
+
+    .social {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .socialLinks {
+        display: block;
+    }
+
+    .socialLinks a img {
+        max-width: 50px;
+        margin: .5rem;
+    }
+
+    /*-------------- body css --------------*/
+
+    .grid div {
+        max-width: 250px;
+    }
+
+    .list div h2 {
+        font-size: 3vw;
+    }
+
+    .list div li {
+        font-size: 2.5vw;
+    }
+
+    .bridal-card button {
+        width: 120px;
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
 }
 
-/*--------- weather ---------*/
-.weather {
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-    padding: .5rem;
-    text-align: center;
-}
+/* --------------------------------media x-large----------------------- */
+@media screen and (min-width: 900px) {
+    h1 {
+        font-size: 2rem;
+    }
 
-.weather h2 {
-    background-color: var(--primary-color);
-    color: var(--accent-color);
-    padding: .5rem;
-    border-radius: 5px;
-    font-size: 7vw;
-}
+    .copywrite,
+    .info {
+        font-size: 2vw;
+    }
 
-
-.current,
-.days {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-}
-
-.forecast {
-    margin-top: 1rem;
-}
-
-.daily,
-.current {
-    box-shadow: 0 1px 2px var(--primary-color);
-    border-radius: 5px;
-    margin: .5rem;
-    padding: 1rem;
 
 }

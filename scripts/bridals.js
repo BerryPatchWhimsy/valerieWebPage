@@ -73,7 +73,7 @@ const displayBridals = (bridals) => {
 
 
         card.innerHTML = `
-        <img src="${bridal.imageURL}" alt="${bridal.name}" loading="lazy" width="400" height="300">
+        <img src="${bridal.imageURL}" alt="${bridal.name}" loading="lazy" width="400" height="400">
         <h2>${bridal.name}</h2>
         <ul>
           <li><strong>Price:</strong> $${bridal.price}</li>
@@ -96,13 +96,14 @@ const displayBridals = (bridals) => {
         dialog.classList.add("bridal-dialog");
         // dialog.id.add = `${name}`;
         dialog.innerHTML = `
+                <a href="${bridal.imageURL}"><img src="${bridal.imageURL}" alt="${bridal.name}" loading="lazy" width="100" height="100"></a>
+                <a href="${bridal.image2URL}"><img src="${bridal.image2URL}" alt="${bridal.name}" loading="lazy" width="100" height="100"></a>
                 <h3>${bridal.name}</h3>
                 <ul>
-                    <li><strong>Price:</strong> $${bridal.price} / night</li>
-                    <li><strong>Size:</strong> ${bridal.sizeInches}</li>
+                    <li><strong>Price:</strong> $${bridal.price}</li>
+                    <li><strong>Size:</strong> ${bridal.sizeInches} inches</li>
                     <li><strong>Descriptions:</strong> ${bridal.description}</li>
                 </ul>
-                <a href="${bridal.image2URL}" target="_blank">more images</a>
                 <button class="close-button">ⓧ</button>
             `;
         container.appendChild(dialog);

@@ -1,12 +1,582 @@
+/* :root {
+    --primary-color: rgb(35, 61, 77);
+    --secondary-color: rgb(161, 193, 129);
+    --background-color: rgb(49, 94, 67);
+    --accent-color: rgb(252, 202, 70);
+
+    --text-color: black;
+
+    --body-font-family: "Cormorant Infant", serif;
+    --heading-font-family: "Original Surfer", sans serif;
+} */
+
+:root {
+    --primary-color: rgb(255, 249, 240);
+    --accent-color: rgb(116, 140, 171);
+    --background-color: rgb(90, 113, 106);
+    --body-color: rgb(255, 249, 240);
+
+    --text-color: rgb(46, 33, 53);
+    --text-2ndary-color: rgb(63, 48, 71);
+
+    --body-font-family: "Kantumruy Pro", sans serif, 100;
+    --heading-fancy-font: "Updock", italic;
+    /*script typ font*/
+    --heading-font-family: "Charm", italic;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: var(--body-font-family);
+    max-width: 320px;
+    background-color: var(--body-color);
 }
 
-.product {
-    margin-bottom: 10px;
+h1 {
+    font-family: var(--body-font-family);
+    color: var(--text-2ndary-color);
 }
 
-button {
-    margin-left: 10px;
-    cursor: pointer;
+
+h2 {
+    font-family: var(--heading-fancy-font);
+    color: var(--text-color);
+}
+
+
+h3,
+h4 {
+    font-family: var(--heading-font-family);
+    color: var(--text-color);
+}
+
+/*---- Basic CSS for the header and footer ----*/
+
+header,
+footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: .5rem;
+}
+
+.container {
+    display: flex;
+    font-size: 8vw;
+    color: var(--primary-color);
+}
+
+.container div {
+    padding-top: .5rem;
+}
+
+.container p {
+    padding-left: 1rem;
+    font-family: var(--heading-font-family);
+
+}
+
+.logo {
+    max-width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    margin-left: .5rem;
+    margin-top: .25rem;
+    background-color: white;
+    align-content: center;
+    border-radius: 5px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#name {
+    font-family: var(--heading-fancy-font);
+    color: var(--primary-color);
+    font-size: 12vw;
+    font-weight: bold;
+}
+
+#menu {
+    border: 0;
+    background: none;
+    position: absolute;
+    right: 2vw;
+    top: 1vw;
+    font-size: 8vw;
+}
+
+#menu::before {
+    content: "☰";
+    color: white;
+}
+
+#menu.open::before {
+    content: "ⅹ";
+    color: var(--primary-color);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--background-color);
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    color: var(--primary-color);
+    padding: 3px;
+    text-decoration: none;
+    text-align: center;
+    transition: .5s;
+    font-size: 7vw;
+
+}
+
+.navigation a:hover,
+#reserve:hover,
+.active:hover::before {
+    color: var(--primary-color);
+    font-weight: bolder;
+    border-radius: 3px;
+    background-color: var(--accent-color);
+}
+
+#animateMe {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+.navigation {
+    overflow: hidden;
+}
+
+#animateMe.open {
+    grid-template-rows: 1fr;
+}
+
+.active::before {
+    content: "✦ Bridal";
+    text-decoration: underline;
+
+}
+
+/*--------- Basics for footer ---------*/
+
+footer {
+    border-radius: 5px 5px 0 0;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.info,
+.social {
+    font-size: 6vw;
+    font-weight: bold;
+}
+
+.copywrite {
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.company {
+    font-size: 13vw;
+    font-family: var(--heading-fancy-font);
+}
+
+.email a {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+.socialLinks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: .5rem;
+    justify-content: left;
+}
+
+.socialLinks a img {
+    max-width: 30px;
+    height: auto;
+}
+
+/*--------- body ---------*/
+#quiltsContainer {
+    margin: 1rem 0;
+    text-align: center;
+    border: none;
+    max-width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: center;
+
+}
+
+.quilt-card,
+.grid div,
+.list div {
+    border: 2px solid var(--background-color);
+    border-radius: 3px;
+    margin: 1rem;
+    box-shadow: 0 0 2px var(--text-color);
+    color: var(--text-color);
+    align-items: center;
+    background-color: var(--accent-color);
+
+}
+
+.quilt-card img {
+    max-width: 95%;
+    height: auto;
+    margin: .25rem;
+    align-items: center;
+    border-radius: 5px;
+
+}
+
+.quilt-card li {
+    list-style: none;
+    text-align: left;
+    color: var(--body-color);
+}
+
+.quilt-card h2 {
+    margin: 0;
+    background-color: var(--secondary-color);
+    color: var(--body-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.availability {
+    color: red;
+    font-weight: bold;
+}
+
+.quilt-card button {
+    font-size: 5vw;
+    margin: 1rem .5rem;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--accent-color);
+    font-style: italic;
+    text-decoration: underline;
+    box-shadow: 0 0 5px var(--background-color);
+}
+
+dialog[open] {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    justify-self: center;
+    max-width: 60%;
+    top: 300px;
+}
+
+dialog h3 {
+    position: relative;
+    background-color: var(--background-color);
+    color: white;
+    padding: .5rem;
+    margin-top: .07rem;
+
+    font-size: 4vw;
+}
+
+dialog ul {
+    padding-left: 1rem;
+}
+
+.quilt-dialog a {
+    margin: 1rem;
+}
+
+.quilt-dialog li {
+    color: var(--text-color);
+    text-align: left;
+    padding: 1rem .5rem 0;
+    justify-self: left;
+}
+
+&::backdrop {
+    background-color: black 1;
+}
+
+.close-button {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    background: none;
+    border: none;
+}
+
+.cardMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#grid,
+#list {
+    margin: .75rem;
+}
+
+.list {
+    justify-items: center;
+    align-items: center;
+}
+
+.list div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    width: 100%;
+    border: 1px solid var(--primary-color);
+}
+
+.list div>* {
+    font-size: 5vw;
+}
+
+.list div h2 {
+    font-size: 6vw;
+    margin: 0;
+    padding: 1.25rem 0;
+
+}
+
+.list div ul {
+    padding: .25rem;
+}
+
+.list div img {
+    display: none;
+}
+
+.list div:nth-child(even) {
+    background-color: var(--background-color);
+}
+
+
+/* --------------------------------media medium---------------------------------------------- */
+@media screen and (min-width: 320px) {
+    body {
+        margin: 0 auto;
+        justify-content: center;
+        max-width: 100%;
+        /*prevent horizontal scroll*/
+        overflow-x: hidden;
+        /*prevent horizontal scroll*/
+    }
+
+    header {
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 90px;
+        max-height: 90px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .navigation a {
+
+        font-size: 6vw;
+        padding: .5rem;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    #animateMe {
+        grid-template-rows: 1fr;
+    }
+
+    .active::before {
+        /* content: "✦ Baby"; */
+        text-decoration: none;
+    }
+
+    #name {
+        font-size: 10vw;
+    }
+
+
+
+    /*-------------- body css --------------*/
+    h1 {
+        padding-left: 1rem;
+        font-size: 2rem;
+    }
+
+    /*-------------- footer css --------------*/
+    .socialLinks a img {
+        max-width: 40px;
+        height: auto;
+    }
+
+
+}
+
+/* --------------------------------media large-------------------------------------------------------------- */
+@media screen and (min-width: 600px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        padding: 1rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        font-size: 2.5rem;
+    }
+
+    .logo {
+        max-width: 100px;
+        height: auto;
+        margin-right: 1rem;
+        margin-left: .5rem;
+        margin-top: .25rem;
+    }
+
+    #name {
+        font-size: 4.25rem;
+    }
+
+    h1 {
+        /* font-size: 3rem; */
+        padding-left: 1rem;
+    }
+
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .navigation a {
+        font-size: 2.25rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+    }
+
+
+
+    footer {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr auto 1fr;
+        padding: 1rem;
+
+    }
+
+    .company {
+        font-style: italic;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .copywrite,
+    .info {
+        text-align: center;
+        font-size: 3vw;
+        font-weight: normal;
+    }
+
+    /* div.copywrite,
+    div.info {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: normal;
+    } */
+
+
+    .social {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .socialLinks {
+        display: block;
+    }
+
+    .socialLinks a img {
+        max-width: 50px;
+        margin: .5rem;
+    }
+
+    /*-------------- body css --------------*/
+
+    .grid div {
+        max-width: 250px;
+
+    }
+
+    .list div h2 {
+        font-size: 3vw;
+    }
+
+    .list div li {
+        font-size: 2.5vw;
+    }
+
+    .quilt-card button {
+        width: 120px;
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+}
+
+/* --------------------------------media x-large----------------------- */
+@media screen and (min-width: 900px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .copywrite,
+    .info {
+        font-size: 2vw;
+    }
+
+
 }

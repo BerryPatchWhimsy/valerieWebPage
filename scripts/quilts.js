@@ -72,8 +72,6 @@ const displayQuilts = (quilts) => {
         available.classList.add("availability");
         available.textContent = getAvailability();
 
-
-
         card.innerHTML = `
         <img src="${quilt.imageURL}" alt="${quilt.name}" loading="lazy" width="400" height="400">
         <h2>${quilt.name}</h2>
@@ -81,9 +79,19 @@ const displayQuilts = (quilts) => {
           <li><strong>Price:</strong> $${quilt.price}</li>
           <li><strong>Size:</strong> ${quilt.sizeInches}</li>
           <li><strong>Availability:</strong> ${available.textContent}</li>
-          <li><strong><button onclick="addToCart('${quilt.name}', ${quilt.price})">Add to Cart</button></li>
         </ul>
       `;
+
+    //     card.innerHTML = `
+    //     <img src="${quilt.imageURL}" alt="${quilt.name}" loading="lazy" width="400" height="400">
+    //     <h2>${quilt.name}</h2>
+    //     <ul>
+    //       <li><strong>Price:</strong> $${quilt.price}</li>
+    //       <li><strong>Size:</strong> ${quilt.sizeInches}</li>
+    //       <li><strong>Availability:</strong> ${available.textContent}</li>
+    //       <li><strong><button onclick="addToCart('${quilt.name}', ${quilt.price})">Add to Cart</button></li>
+    //     </ul>
+    //   `;
 
 
 
@@ -101,8 +109,6 @@ const displayQuilts = (quilts) => {
         dialog.innerHTML = `
                 <a href="${quilt.imageURL}"><img src="${quilt.imageURL}" alt="${quilt.name}" loading="lazy" width="100" height="100"></a>
                 <a href="${quilt.image2URL}"><img src="${quilt.image2URL}" alt="${quilt.name}" loading="lazy" width="100" height="100"></a>
-                <a href="${quilt.image3URL}"><img src="${quilt.image3URL}" alt="${quilt.name}" loading="lazy" width="100" height="100"></a>
-                <a href="${quilt.image4URL}"><img src="${quilt.image4URL}" alt="${quilt.name}" loading="lazy" width="100" height="100"></a>
                 <h3>${quilt.name}</h3>
                 <ul>
                     <li><strong>Price:</strong> $${quilt.price}</li>

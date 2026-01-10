@@ -1,13 +1,16 @@
 :root {
-    --primary-color: rgb(35, 61, 77);
-    --secondary-color: rgb(161, 193, 129);
-    --background-color: rgb(49, 94, 67);
-    --accent-color: rgb(252, 202, 70);
+    --primary-color: rgb(255, 249, 240);
+    --accent-color: rgb(116, 140, 171);
+    --background-color: rgb(90, 113, 106);
+    --body-color: rgb(255, 249, 240);
 
-    --text-color: black;
+    --text-color: rgb(46, 33, 53);
+    --text-2ndary-color: rgb(63, 48, 71);
 
-    --body-font-family: "Cormorant Infant", serif;
-    --heading-font-family: "Original Surfer", sans serif;
+    --body-font-family: "Kantumruy Pro", sans serif, 100;
+    --heading-fancy-font: "Updock", italic;
+    /*script typ font*/
+    --heading-font-family: "Charm", italic;
 }
 
 * {
@@ -22,9 +25,17 @@ body {
     max-width: 320px;
 }
 
-h1,
-h2,
-h3 {
+h1 {
+    font-family: var(--body-font-family);
+    color: var(--text-2ndary-color);
+}
+
+h2 {
+    font-family: var(--heading-fancy-font);
+    color: var(--text-color);
+}
+
+h3, h4 {
     font-family: var(--heading-font-family);
     color: var(--text-color);
 }
@@ -40,22 +51,27 @@ footer {
 
 .container {
     display: flex;
-    font-size: 6.5vw;
-    color: white;
-    font-weight: bold;
+    font-size: 8vw;
+    color: var(--primary-color);
 }
 
 .container div {
     padding-top: .5rem;
 }
 
+.container p {
+    padding-left: 1rem;
+    font-family: var(--heading-font-family);
+
+}
+
 .logo {
     max-width: 50px;
-    height: auto;
+    height: 50px;
     margin-right: 1rem;
     margin-left: .5rem;
     margin-top: .25rem;
-    background-color: white;
+    background-color: var(--body-color);
     align-content: center;
     border-radius: 5px;
 }
@@ -67,9 +83,10 @@ footer {
 }
 
 #name {
-    font-family: var(--heading-font-family);
-    color: white;
-    font-size: 8vw;
+    font-family: var(--heading-fancy-family);
+    color: var(--primary-color);
+    font-size: 12vw;
+    font-weight: bold;
 }
 
 #menu {
@@ -87,21 +104,21 @@ footer {
 }
 
 #menu.open::before {
-    content: "ⓧ";
-    color: white;
+    content: "ⅹ";
+    color: var(--primary-color);
 }
 
 .navigation {
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: var(--secondary-color);
-
+    background-color: var(--background-color);
+    padding: 0;
 }
 
 .navigation a {
     display: block;
-    color: var(--text-color);
+    color: var(--primary-color);
     padding: 3px;
     text-decoration: none;
     text-align: center;
@@ -110,7 +127,7 @@ footer {
 
 }
 
-.navigation a:hover {
+.navigation a:hover, .active:hover::before {
     color: var(--primary-color);
     font-weight: bolder;
     border-radius: 3px;
@@ -132,39 +149,44 @@ footer {
 }
 
 .active::before {
-    content: "Contact Us☀️";
+    content: "✦ Contact Us";
     text-decoration: underline;
 
 }
 
-h1 {
+/* h1 {
     padding-bottom: .25rem;
     padding-left: .5rem;
     text-align: center;
     background-color: var(--secondary-color);
-}
+} */
 
 /*--------- Basics for footer ---------*/
 
 footer {
     border-radius: 5px 5px 0 0;
-    color: white;
+    color: var(--text-color);
     font-weight: bold;
 }
 
 .info,
-.social,
-.copywrite {
+.social {
     font-size: 6vw;
     font-weight: bold;
 }
 
-.leafyTreetopsLLC {
-    font-size: 7vw;
+.copywrite {
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.company {
+    font-size: 13vw;
+    font-family: var(--heading-fancy-font);
 }
 
 .email a {
-    color: white;
+    color: var(--text-color);
     text-decoration: underline;
 }
 
@@ -173,7 +195,7 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     margin: .5rem;
-    justify-content: space-evenly;
+    justify-content: left;
 }
 
 .socialLinks a img {
@@ -234,7 +256,7 @@ footer {
     color: blue;
 }
 
-.officeaddress a {
+/* .officeaddress a {
     color: var(--accent2-color);
 }
 
@@ -275,17 +297,17 @@ footer {
 
 .staff p {
     color: white;
-}
+} */
 
-.form {
+/* .form {
     margin: 1rem;
     border: 3px solid var(--background-color);
     border-radius: 5px;
     padding: 10px;
     /* background-color: var(--tertiary-color); */
-}
+/* } */
 
-.form fieldset {
+/* .form fieldset {
     margin: 1rem 0;
     border: 1px solid var(--background-color);
     border-radius: 10px;
@@ -332,13 +354,13 @@ footer {
 .formemail,
 .pAddress {
     padding-top: 1rem;
-}
+} */
 
 /* .form:placeholder{
     color: var(--secondary-color);
 } */
 
-.form input[type="radio"] {
+/* .form input[type="radio"] {
     margin-right: 10px;
     transform: scale(1.5);
     margin-top: 10px;
@@ -364,7 +386,7 @@ footer {
     color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
     font-weight: bold;
-}
+} */
 
 /*--------thank you page-------------*/
 .messageContainer {
@@ -419,12 +441,11 @@ footer {
     .navigation {
         flex-direction: row;
         justify-content: space-between;
-        padding: .5rem;
     }
 
     .navigation a {
-        font-weight: bolder;
-
+        font-size: 6vw;
+        padding: .5rem;
     }
 
     .navigation li {
@@ -435,14 +456,27 @@ footer {
         grid-template-rows: 1fr;
     }
 
+        .active::before {
+            /* content: "✦ Contact Us"; */
+            text-decoration: none;
+        }
     
+        #name {
+            font-size: 10vw;
+        }
 
 
 
     /*-------------- body css --------------*/
     h1 {
         padding-left: 1rem;
-        font-size: 8vw;
+        font-size: 2rem;
+    }
+
+    /*-------------- footer css --------------*/
+    .socialLinks a img {
+        max-width: 40px;
+        height: auto;
     }
 
 
@@ -462,6 +496,7 @@ footer {
     }
 
     .container {
+        display: flex;
         flex-direction: row;
         justify-content: left;
         font-size: 2.5rem;
@@ -470,10 +505,18 @@ footer {
     .logo {
         max-width: 100px;
         height: auto;
+        margin-right: 1rem;
+        margin-left: .5rem;
+        margin-top: .25rem;
     }
 
     #name {
-        font-size: 3rem;
+        font-size: 4.25rem;
+    }
+
+    h1 {
+        /* font-size: 3rem; */
+        padding-left: 1rem;
     }
 
 
@@ -514,7 +557,7 @@ footer {
 
     
 
-    .form {
+    /* .form {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: .25fr auto .25fr;
@@ -528,7 +571,7 @@ footer {
 
     .form input[type="submit"] {
         grid-row: 3 / 4;
-    }
+    } */
 
 
 
@@ -540,9 +583,10 @@ footer {
 
     }
 
-    .leafyTreetopsLLC {
+    .company {
         font-style: italic;
         font-size: 1.5rem;
+        font-weight: bold;
     }
 
     .copywrite,
