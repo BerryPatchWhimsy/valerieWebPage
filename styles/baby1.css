@@ -571,10 +571,14 @@ dialog ul {
     h1 {
         font-size: 2rem;
     }
+    
+    .company {
+        font-size: 30px;
+    }
 
     .copywrite,
     .info {
-        font-size: 2vw;
+        font-size: 20px;
     }
 
 
