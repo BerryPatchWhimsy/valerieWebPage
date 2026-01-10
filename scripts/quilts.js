@@ -115,6 +115,9 @@ const displayQuilts = (quilts) => {
                     <li><strong>Size:</strong> ${quilt.sizeInches} (inches)</li>
                     <li><strong>Washing Instructions:</strong> ${quilt.washingInstructions}</li>
                     <li><strong>Descriptions:</strong> ${quilt.description}</li>
+                    <li><strong>NOTE:</strong> Our website is currently under construction. If you are interested in any of our merchandise, please
+                contact us via phone or email.
+            We apologize for the inconvenience and appreciate your understanding!</li>
                 </ul>
                 <button class="close-button">ⓧ</button>
             `;

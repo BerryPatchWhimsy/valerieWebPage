@@ -5,8 +5,8 @@
             "type": "boutonniere",
             "sizeInches": "",
             "price": 0,
-            "imageURL": "https://https://berrypatchwhimsy.github.io/valerieWebPage/images/boutonniers.webp",
-            "image2URL": "https://https://berrypatchwhimsy.github.io/valerieWebPage/images/single-boutonniere.webp",
+            "imageURL": "https://berrypatchwhimsy.github.io/valerieWebPage/images/boutonniers.webp",
+            "image2URL": "https://berrypatchwhimsy.github.io/valerieWebPage/images/single-boutonniere.webp",
             "description": "Made with dark red silk roses, creamy white blossoms and gold ribbon accents.",
             "availability": false
         },
@@ -15,8 +15,8 @@
             "type": "boutonniere",
             "sizeInches": "",
             "price": 0,
-            "imageURL": "https://https://berrypatchwhimsy.github.io/valerieWebPage/images/standing-veil.webp",
-            "image2URL": "https://https://berrypatchwhimsy.github.io/valerieWebPage/images/veil-close-up.webp",
+            "imageURL": "https://berrypatchwhimsy.github.io/valerieWebPage/images/standing-veil.webp",
+            "image2URL": "https://berrypatchwhimsy.github.io/valerieWebPage/images/veil-close-up.webp",
             "description": "Made with white English net fabric with a delicate pearl and crystal comb.",
             "availability": false
         }

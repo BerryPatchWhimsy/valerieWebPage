@@ -103,6 +103,9 @@ const displayBridals = (bridals) => {
                     <li><strong>Price:</strong> $${bridal.price}</li>
                     <li><strong>Size:</strong> ${bridal.sizeInches} inches</li>
                     <li><strong>Descriptions:</strong> ${bridal.description}</li>
+                    <li><strong>NOTE:</strong> Our website is currently under construction. If you are interested in any of our merchandise, please
+                contact us via phone or email.
+            We apologize for the inconvenience and appreciate your understanding!</li>
                 </ul>
                 <button class="close-button">ⓧ</button>
             `;

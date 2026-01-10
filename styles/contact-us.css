@@ -23,6 +23,8 @@ body {
     grid-template-columns: 1fr;
     font-family: var(--body-font-family);
     max-width: 320px;
+    background-color: var(--body-color);
+
 }
 
 h1 {
@@ -84,7 +86,7 @@ footer {
 }
 
 #name {
-    font-family: var(--heading-fancy-family);
+    font-family: var(--heading-fancy-font);
     color: var(--primary-color);
     font-size: 12vw;
     font-weight: bold;
@@ -210,17 +212,23 @@ footer {
 .officeInfo {
 
     margin: 1rem;
-    padding: 1rem;
+    /* padding: 1rem; */
     border: 5px solid var(--secondary-color);
     border-radius: 5px;
+    align-items: center;
+    max-width: 400px;
+}
+
+.mapInfo img{
+    margin-right: 1rem;
 }
 
 #office img {
-    width: 100%;
+    width: 90%;
     object-fit: fill;
     box-shadow: 0 0 10px var(--secondary-color);
     border-radius: 10px;
-
+    
 }
 
 #map iframe {
@@ -252,6 +260,11 @@ footer {
 
 .website {
     text-decoration: underline;
+    flex-wrap: wrap;
+}
+
+.website img {
+    background-color: var(--body-color);
 }
 
 .website p:hover,
@@ -554,7 +567,8 @@ footer {
     }
 
     .officeInfo {
-        display: grid;
+        display: flex;
+        flex-wrap: wrap;
         grid-gap: 1rem;
         /* grid-template-columns: 2fr 1fr; */
         max-width: 1500px;
