@@ -15,7 +15,7 @@ button.addEventListener("click", () => {
     button.classList.toggle("open");
 });
 
-const bridalsList = "https://berrypatchwhimsy.github.io/valerieWebPage/data/bridals.json";
+const bridalsList = "data/bridals.json";
 async function getBridalsData() {
     try {
         const response = await fetch(bridalsList);
